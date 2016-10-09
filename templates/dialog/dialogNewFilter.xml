@@ -1,0 +1,13 @@
+<template>
+    <boxLayout id="dialogNewFilter" >
+    <groupContainer  text="" frameStyle="noFrame" state="false" >
+        <gridLayout id="dialogNewFilter.grid" marginTop="15" marginBottom="15" horizontalSpacing="5" verticalSpacing="5" columnMinimumWidth="1:70">
+        <gridLayoutItem row="1"  column="1" columnSpan="1"  ><label id="dialogNewFilter.name.new.label" value="Filter name:         " textAlignment="left|vCenter" vSizePolicy="fixed" borderStyle="" fixedHeight="20" /></gridLayoutItem>
+        <gridLayoutItem row="1"  column="2" columnSpan="20" ><editBox placeHolderText="filtername"  id="dialogNewFilter.name.new"  hSizePolicy="expanding" /></gridLayoutItem>
+
+        <!-- Generated rows -->
+    </gridLayout>
+    </groupContainer>
+    </boxLayout >
+    <include file="dialogNewFilter.lua" />
+</template>

@@ -1,0 +1,105 @@
+<template>
+
+    <window id="shotEditorView" backgroundColor="44,44,44" backgroundStyle="brush">
+
+        <boxLayout>
+            <!--  HEADER  -->
+            <window vSizePolicy="fixed" borderStyle="" fixedHeight="3" backgroundStyle="plain" brushId="Toolbar"/>
+
+            <window vSizePolicy="fixed" backgroundColor="44,44,44" borderStyle="plain|top|bottom" fixedHeight="19" backgroundStyle="plain" >
+            <boxLayout direction="horizontal" spacing="0">
+                <label id="shotEditorView.label.text" textAlignment="center" text=""/>
+            </boxLayout>
+            </window>
+
+            <window  borderStyle="bottom|raised" hSizePolicy="expanding" vSizePolicy="fixed" fixedHeight="26"  >
+            <boxLayout direction="horizontal" spacing="0">
+                <window>
+                    <boxLayout direction="horizontal" spacing="0">
+                        <boxLayoutItem type="spacing" size="4"/>
+                        <toggleButton  id="shotEditorView.button.runtime"    icon="Build"   tooltip="Display runtime value" hSizePolicy="fixed" fixedWidth="26" vSizePolicy="fixed" fixedHeight="20" state="true"/>
+                        <boxLayoutItem  type="stretch"/>
+                        <instantiate id="section.environment.fastfilter" library="com.shiva.editor.common.lib" template="FastFilter" />
+                    </boxLayout>
+                </window>
+            </boxLayout>
+            </window>
+            <!--  CONTENT  -->
+            <boxLayoutItem >
+            <tree id="shotEditorView.content"  expandsOnDoubleClick="true"   iconSize="16" indentation="18" filter="true" headers="true" marginTop="2" marginLeft="1" marginBottom="1" marginRight="1"  borderStyle="left|bottom|right|raised" hSizePolicy="expanding" vSizePolicy="expanding" fixedRowHeight="20">
+                <column  position="1"  headerText="Track"        fixedSize="120" fileDisplay="fullname" />
+                <column  position="2"   headerText="C-value"       fixedSize="40"  fileDisplay="size" />
+                <column  position="3"  headerText="F-value"        fixedSize="30"   />
+                <column  position="4"  headerText=""        fixedSize="30"  fileDisplay="size" />
+                <column  position="5"  headerText=""        fixedSize="30"  fileDisplay="size" />
+                <column  position="6"  headerText=""        fixedSize="30"  fileDisplay="size" />
+                <column  position="7"  headerText=""        fixedSize="30"  fileDisplay="size" />
+                <column  position="8"  headerText=""        fixedSize="30"  fileDisplay="size" />
+                <column  position="9"  headerText=""        fixedSize="30"  fileDisplay="size" />
+                <column  position="10"  headerText=""       fixedSize="30"  fileDisplay="size" />
+                <column  position="11"  headerText=""       fixedSize="30"  fileDisplay="size" />
+                <column  position="12"  headerText=""       fixedSize="30"  fileDisplay="size" />
+                <column  position="13"  headerText=""       fixedSize="30"  fileDisplay="size" />
+                <column  position="14"  headerText=""       fixedSize="30"  fileDisplay="size" />
+                <column  position="15"  headerText=""       fixedSize="30"  fileDisplay="size" />
+                <column  position="16"  headerText=""       fixedSize="30"  fileDisplay="size" />
+                <column  position="17"  headerText=""       fixedSize="30"  fileDisplay="size" />
+                <column  position="18"  headerText=""       fixedSize="30"  fileDisplay="size" />
+                <column  position="19"  headerText=""       fixedSize="30"  fileDisplay="size" />
+                <column  position="20"  headerText=""     />
+            </tree>
+            </boxLayoutItem>
+            <window  borderStyle="bottom|raised" hSizePolicy="expanding" vSizePolicy="fixed" fixedHeight="26"  >
+            <boxLayout direction="horizontal" spacing="0">
+                <window>
+                    <boxLayout direction="horizontal" spacing="0">
+                        <boxLayoutItem type="spacing" size="4"/>
+                        <boxLayoutItem  type="stretch"/>
+                        <toggleButton  id="shotEditorView.button.playrangeleft"    icon="playrangeleft"   tooltip="Display runtime value" hSizePolicy="fixed" fixedWidth="26" vSizePolicy="fixed" fixedHeight="20" state="true"/>
+                        <toggleButton  id="shotEditorView.button.stepprev"    icon="stepprev"   tooltip="Display runtime value" hSizePolicy="fixed" fixedWidth="26" vSizePolicy="fixed" fixedHeight="20" state="true"/>
+                        <toggleButton  id="shotEditorView.button.stop"    icon="stop"   tooltip="Display runtime value" hSizePolicy="fixed" fixedWidth="26" vSizePolicy="fixed" fixedHeight="20" state="true"/>
+                        <toggleButton  id="shotEditorView.button.pause"    icon="pause"   tooltip="Display runtime value" hSizePolicy="fixed" fixedWidth="26" vSizePolicy="fixed" fixedHeight="20" state="true"/>
+                        <toggleButton  id="shotEditorView.button.play"    icon="play"   tooltip="Display runtime value" hSizePolicy="fixed" fixedWidth="26" vSizePolicy="fixed" fixedHeight="20" state="true"/>
+                        <toggleButton  id="shotEditorView.button.loop"    icon="loop"   tooltip="Display runtime value" hSizePolicy="fixed" fixedWidth="26" vSizePolicy="fixed" fixedHeight="20" state="true"/>
+                        <toggleButton  id="shotEditorView.button.stepnext"    icon="stepnext"   tooltip="Display runtime value" hSizePolicy="fixed" fixedWidth="26" vSizePolicy="fixed" fixedHeight="20" state="true"/>
+                        <toggleButton  id="shotEditorView.button.playrangeright"    icon="playrangeright"   tooltip="Display runtime value" hSizePolicy="fixed" fixedWidth="26" vSizePolicy="fixed" fixedHeight="20" state="true"/>
+                        <boxLayoutItem  type="stretch"/>
+                        <boxLayoutItem type="spacing" size="4"/>
+                    </boxLayout>
+                </window>
+            </boxLayout>
+            </window>
+            <boxLayoutItem >
+
+            </boxLayoutItem>
+            <boxLayoutItem >
+                <slider id="shotEditorView.slider.1" />
+            </boxLayoutItem>
+             <boxLayoutItem >
+                <slider id="shotEditorView.slider.2" />
+            </boxLayoutItem>
+
+
+            <!--  CONTEXT MENU  -->
+            <menu id="shotEditorView.contextmenu" >
+                <menuItem id="shotEditorView.contextmenu.edit" text="Edit" icon="Edit" > </menuItem>
+                <menuItem id="shotEditorView.contextmenu.remove" text="Remove" icon="Remove" >  </menuItem>
+                <menuItem id="shotEditorView.contextmenu.add" text="Add..." icon="Add"> </menuItem>
+            </menu>
+
+             <!-- <connect sender="datamodelView.content" event="kEventTreeItemClicked" handler="onEventTreeItemClicked" /> -->
+             <connect sender="shotEditorView.content" event="kEventCustomContextMenuRequested" handler="onContextMenuRequestedShotView"/>
+
+            <!-- CONNECTS -->
+            <connect sender="shotEditorView.contextmenu.add"           event="kEventMenuActionTriggered" handler="onShotEditorViewTreeContextMenuAddField" />
+            <connect sender="shotEditorView.contextmenu.remove"        event="kEventMenuActionTriggered" handler="onShotEditorViewTreeContextMenuRemoveField" />
+
+            <connect sender="shotEditorView.button.add"       event="kEventButtonClicked"                handler="onShotEditorViewTreeContextMenuAddField" />
+            <connect sender="shotEditorView.button.remove"    event="kEventButtonClicked"                handler="onShotEditorViewTreeContextMenuRemoveField" />
+            <connect sender="shotEditorView.button.edit"      event="kEventButtonClicked"                handler="onShotEditorViewTreeContextMenuEditField" />
+
+
+        </boxLayout>
+    </window>
+    <include file="shotEditorView.lua"/>
+</template>

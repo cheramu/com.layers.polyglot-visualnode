@@ -1,0 +1,37 @@
+<!-- generated file -->
+
+<library id="packages">
+
+<!-- package:polyglot-desktop version:latest -->
+<!---- repository-url:   -->
+<!---- description: Adds a node dekstop to ShiVa -->
+<!---- author: - email: - website: --->
+<!-- end -->
+
+<!-- package:polyglot-dialogue version:latest -->
+<!---- repository-url:   -->
+<!---- description: Adds a node based dialogue editor -->
+<!---- author: - email: - website: --->
+    <supportedExtension value="pds" />
+    <supportedExtension value="pdp" />
+    <include file="com.layers.polyglot-dialogue/model/model.lua" />
+    <include file="com.layers.polyglot-dialogue/logic/apm-dialogue.lua" />
+    <include file="com.layers.polyglot-dialogue/logic/AI_DIALOGUE.lua" />
+    <include file="com.layers.polyglot-dialogue/views/stageView/preview/previewStageHud.lua" />
+    <include file="com.layers.polyglot-dialogue/views/stageView/preview/previewStageView.lua" />
+    <include file="com.layers.polyglot-dialogue/views/stageView/screenplay/screenplayStageHud.lua" />
+    <include file="com.layers.polyglot-dialogue/views/stageView/screenplay/screenplayStageScene.lua" />
+    <include file="com.layers.polyglot-dialogue/views/stageView/screenplay/screenplayStageView.lua" />
+    <include file="com.layers.polyglot-dialogue/views/translationView/translationView.xml" />
+<!-- end -->
+
+<!-- package:polyglot-source version:latest -->
+<!---- repository-url:   -->
+<!---- description: Adds a node based source editor -->
+<!---- author: - email: - website: --->
+    <include file="com.layers.polyglot-source/logic/api-shiva.lua" />
+    <include file="com.layers.polyglot-source/logic/apc-shiva.lua" />
+    <include file="com.layers.polyglot-source/logic/apm-shiva.lua" />
+<!-- end -->
+
+</library>

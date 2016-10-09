@@ -1,0 +1,30 @@
+<template>
+    <window id="diagramView" backgroundColor="44,44,44" backgroundStyle="brush">
+        <boxLayout>
+            <!--  HEADER  -->
+            <window vSizePolicy="fixed" borderStyle="" fixedHeight="3" backgroundStyle="plain" brushId="Toolbar"/>
+
+            <window vSizePolicy="fixed" backgroundColor="44,44,44" borderStyle="plain|top|bottom" fixedHeight="19" backgroundStyle="plain" >
+            <boxLayout direction="horizontal" spacing="0">
+                <label id="diagramView.label.text" textAlignment="center" text=""/>
+            </boxLayout>
+            </window>
+
+            <window  borderStyle="bottom|raised" hSizePolicy="expanding" vSizePolicy="fixed" fixedHeight="26"  >
+            <boxLayout direction="horizontal" spacing="0">
+                <window>
+                    <boxLayout direction="horizontal" spacing="0">
+                        <boxLayoutItem type="spacing" size="4"/>
+                        <toggleButton  id="diagramView.button.runtime"    icon="Build"   tooltip="Display runtime value" hSizePolicy="fixed" fixedWidth="26" vSizePolicy="fixed" fixedHeight="20" state="true"/>
+                        <boxLayoutItem  type="stretch"/>
+                        <instantiate id="section.environment.fastfilter" library="com.shiva.editor.common.lib" template="FastFilter" />
+                    </boxLayout>
+                </window>
+            </boxLayout>
+            </window>
+            <!--  CONTENT  -->
+            <navigator  id="diagramView.content" vSizePolicy="expanding"  backgroundColor="255,255,255" />
+        </boxLayout>
+    </window>
+    <include file="diagramView.lua"/>
+</template>

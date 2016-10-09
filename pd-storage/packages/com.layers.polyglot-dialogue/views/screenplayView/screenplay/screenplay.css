@@ -1,0 +1,7 @@
+div {
+    border-style:solid;
+}
+
+div.one {
+    border-color: red;
+}

@@ -1,0 +1,243 @@
+<items>
+  <item type="dialog-type" id="dialog-type" field="ID" value="ID"/>
+  <item type="dialog-type" id="dialog-type" field="TEXT" value="TEXT"/>
+  <item type="dialog-type" id="dialog-type" field="CONDITION" value="CONDITION"/>
+  <item type="dialog-type" id="dialog-type" field="NEXT" value="NEXT"/>
+  <item type="dialog-type" id="dialog-type" field="ACTOR_TAG" value="ACTOR_TAG"/>
+  <item type="text" id="T(0)" field="TITLE_SHAKESPEARE" value="SHAKESPEARE"/>
+  <item type="text" id="T(0)" field="SUBTITLE_SHAKESPAERE" value=""/>
+  <item type="text" id="T(0)" field="TITLE_MACBETH" value="MACBETH"/>
+  <item type="text" id="T(0)" field="SUBTITLE_MACBETH" value="Actus Primus. Scoena Prima."/>
+  <item type="text" id="T(0)" field="MENU_EXIT" value="EXIT"/>
+  <item type="text" id="T(0)" field="MENU_RESTART" value="RESTART"/>
+  <item type="text" id="T(0)" field="MENU_LANGUAGE" value="LANGUAGE-EN"/>
+  <item type="text" id="T(0)" field="MENU_CONTINIUE" value="CONTINUE"/>
+  <item type="text" id="T(0)" field="TITLE_SHAKESPEARE" value="SHAKESPEARE"/>
+  <item type="text" id="T(0)" field="SUBTITLE_SHAKESPAERE" value=""/>
+  <item type="text" id="T(0)" field="TITLE_MACBETH" value="MACBETH"/>
+  <item type="text" id="T(0)" field="SUBTITLE_MACBETH" value="Actus Primus. Scoena Prima."/>
+  <item type="text" id="T(0)" field="MENU_EXIT" value="EXIT"/>
+  <item type="text" id="T(0)" field="MENU_RESTART" value="RESTART"/>
+  <item type="text" id="T(0)" field="MENU_LANGUAGE" value="LANGUAGE-EN"/>
+  <item type="text" id="T(0)" field="MENU_CONTINIUE" value="CONTINUE"/>
+  <item type="actor" id="A(First Witch)" field="TAG" value="A(First Witch)"/>
+  <item type="actor" id="A(First Witch)" field="NAME" value="Witch"/>
+  <item type="actor" id="A(First Witch)" field="AGE" value=""/>
+  <item type="actor" id="A(First Witch)" field="BLOODTYPE" value=""/>
+  <item type="actor" id="A(First Witch)" field="BIRTHSIGN" value=""/>
+  <item type="actor" id="A(First Witch)" field="GENDER" value=""/>
+  <item type="actor" id="A(First Witch)" field="PICTURE" value=""/>
+  <item type="actor" id="A(First Witch)" field="DESCRIPTION" value=""/>
+  <item type="actor" id="A(All Witches)" field="TAG" value="A(All Witches)"/>
+  <item type="actor" id="A(All Witches)" field="NAME" value="Witch"/>
+  <item type="actor" id="A(All Witches)" field="AGE" value=""/>
+  <item type="actor" id="A(All Witches)" field="BLOODTYPE" value=""/>
+  <item type="actor" id="A(All Witches)" field="BIRTHSIGN" value=""/>
+  <item type="actor" id="A(All Witches)" field="GENDER" value=""/>
+  <item type="actor" id="A(All Witches)" field="PICTURE" value=""/>
+  <item type="actor" id="A(All Witches)" field="DESCRIPTION" value=""/>
+  <item type="actor" id="A(Third Witch)" field="TAG" value="A(Third Witch)"/>
+  <item type="actor" id="A(Third Witch)" field="NAME" value="Witch"/>
+  <item type="actor" id="A(Third Witch)" field="AGE" value=""/>
+  <item type="actor" id="A(Third Witch)" field="BLOODTYPE" value=""/>
+  <item type="actor" id="A(Third Witch)" field="BIRTHSIGN" value=""/>
+  <item type="actor" id="A(Third Witch)" field="GENDER" value=""/>
+  <item type="actor" id="A(Third Witch)" field="PICTURE" value=""/>
+  <item type="actor" id="A(Third Witch)" field="DESCRIPTION" value=""/>
+  <item type="actor" id="A(Second Witch)" field="TAG" value="A(Second Witch)"/>
+  <item type="actor" id="A(Second Witch)" field="NAME" value="Witch"/>
+  <item type="actor" id="A(Second Witch)" field="AGE" value=""/>
+  <item type="actor" id="A(Second Witch)" field="BLOODTYPE" value=""/>
+  <item type="actor" id="A(Second Witch)" field="BIRTHSIGN" value=""/>
+  <item type="actor" id="A(Second Witch)" field="GENDER" value=""/>
+  <item type="actor" id="A(Second Witch)" field="PICTURE" value=""/>
+  <item type="actor" id="A(Second Witch)" field="DESCRIPTION" value=""/>
+  <item type="conversation" id="D(2)" field="ID" value="D(2)"/>
+  <item type="dialog" id="D(2)" field="ID" value="D(2)"/>
+  <item type="dialog" id="D(2)" field="TAG" value=""/>
+  <item type="dialog" id="D(2)" field="ACTOR_TAG" value="A(First Witch)"/>
+  <item type="dialog" id="D(2)" field="TEXT" value="When shall we three meet again?"/>
+  <item type="dialog" id="D(2)" field="SOUND" value=""/>
+  <item type="dialog" id="D(2)" field="FUCTION" value=""/>
+  <item type="dialog" id="D(2)" field="NEXT" value="D(4)|D(12)|D(13)"/>
+  <item type="dialog" id="D(2)" field="STATE" value=""/>
+  <item type="dialog" id="D(2)" field="CONDITION" value=""/>
+  <item type="dialog" id="D(2)" field="TITLE" value=""/>
+  <item type="dialog" id="D(2)" field="DESCRIPTION" value=""/>
+  <item type="dialog" id="D(3)" field="ID" value="D(3)"/>
+  <item type="dialog" id="D(3)" field="TAG" value=""/>
+  <item type="dialog" id="D(3)" field="ACTOR_TAG" value="A(Second Witch)"/>
+  <item type="dialog" id="D(3)" field="TEXT" value="When the hurley-burley s done,"/>
+  <item type="dialog" id="D(3)" field="SOUND" value=""/>
+  <item type="dialog" id="D(3)" field="FUCTION" value=""/>
+  <item type="dialog" id="D(3)" field="NEXT" value="D(5)|D(14)"/>
+  <item type="dialog" id="D(3)" field="STATE" value=""/>
+  <item type="dialog" id="D(3)" field="CONDITION" value=""/>
+  <item type="dialog" id="D(3)" field="TITLE" value=""/>
+  <item type="dialog" id="D(3)" field="DESCRIPTION" value=""/>
+  <item type="dialog" id="D(4)" field="ID" value="D(4)"/>
+  <item type="dialog" id="D(4)" field="TAG" value=""/>
+  <item type="dialog" id="D(4)" field="ACTOR_TAG" value="A(First Witch)"/>
+  <item type="dialog" id="D(4)" field="TEXT" value="In thunder, lightning, or in rain?"/>
+  <item type="dialog" id="D(4)" field="SOUND" value=""/>
+  <item type="dialog" id="D(4)" field="FUCTION" value=""/>
+  <item type="dialog" id="D(4)" field="NEXT" value="D(3)"/>
+  <item type="dialog" id="D(4)" field="STATE" value=""/>
+  <item type="dialog" id="D(4)" field="CONDITION" value=""/>
+  <item type="dialog" id="D(4)" field="TITLE" value=""/>
+  <item type="dialog" id="D(4)" field="DESCRIPTION" value=""/>
+  <item type="dialog" id="D(5)" field="ID" value="D(5)"/>
+  <item type="dialog" id="D(5)" field="TAG" value=""/>
+  <item type="dialog" id="D(5)" field="ACTOR_TAG" value="A(Second Witch)"/>
+  <item type="dialog" id="D(5)" field="TEXT" value="When the battle is lost an won."/>
+  <item type="dialog" id="D(5)" field="SOUND" value=""/>
+  <item type="dialog" id="D(5)" field="FUCTION" value=""/>
+  <item type="dialog" id="D(5)" field="NEXT" value="D(6)"/>
+  <item type="dialog" id="D(5)" field="STATE" value=""/>
+  <item type="dialog" id="D(5)" field="CONDITION" value=""/>
+  <item type="dialog" id="D(5)" field="TITLE" value=""/>
+  <item type="dialog" id="D(5)" field="DESCRIPTION" value=""/>
+  <item type="dialog" id="D(6)" field="ID" value="D(6)"/>
+  <item type="dialog" id="D(6)" field="TAG" value=""/>
+  <item type="dialog" id="D(6)" field="ACTOR_TAG" value="A(Third Witch)"/>
+  <item type="dialog" id="D(6)" field="TEXT" value="That will be ere the set of sun."/>
+  <item type="dialog" id="D(6)" field="SOUND" value=""/>
+  <item type="dialog" id="D(6)" field="FUCTION" value=""/>
+  <item type="dialog" id="D(6)" field="NEXT" value="D(7)"/>
+  <item type="dialog" id="D(6)" field="STATE" value=""/>
+  <item type="dialog" id="D(6)" field="CONDITION" value=""/>
+  <item type="dialog" id="D(6)" field="TITLE" value=""/>
+  <item type="dialog" id="D(6)" field="DESCRIPTION" value=""/>
+  <item type="dialog" id="D(7)" field="ID" value="D(7)"/>
+  <item type="dialog" id="D(7)" field="TAG" value=""/>
+  <item type="dialog" id="D(7)" field="ACTOR_TAG" value="A(First Witch)"/>
+  <item type="dialog" id="D(7)" field="TEXT" value="Where the place?"/>
+  <item type="dialog" id="D(7)" field="SOUND" value=""/>
+  <item type="dialog" id="D(7)" field="FUCTION" value=""/>
+  <item type="dialog" id="D(7)" field="NEXT" value="D(8)|D(15)|D(16)"/>
+  <item type="dialog" id="D(7)" field="STATE" value=""/>
+  <item type="dialog" id="D(7)" field="CONDITION" value=""/>
+  <item type="dialog" id="D(7)" field="TITLE" value=""/>
+  <item type="dialog" id="D(7)" field="DESCRIPTION" value=""/>
+  <item type="dialog" id="D(8)" field="ID" value="D(8)"/>
+  <item type="dialog" id="D(8)" field="TAG" value=""/>
+  <item type="dialog" id="D(8)" field="ACTOR_TAG" value="A(Second Witch)"/>
+  <item type="dialog" id="D(8)" field="TEXT" value="Upon the heath."/>
+  <item type="dialog" id="D(8)" field="SOUND" value=""/>
+  <item type="dialog" id="D(8)" field="FUCTION" value=""/>
+  <item type="dialog" id="D(8)" field="NEXT" value="D(9)"/>
+  <item type="dialog" id="D(8)" field="STATE" value=""/>
+  <item type="dialog" id="D(8)" field="CONDITION" value=""/>
+  <item type="dialog" id="D(8)" field="TITLE" value=""/>
+  <item type="dialog" id="D(8)" field="DESCRIPTION" value=""/>
+  <item type="dialog" id="D(9)" field="ID" value="D(9)"/>
+  <item type="dialog" id="D(9)" field="TAG" value=""/>
+  <item type="dialog" id="D(9)" field="ACTOR_TAG" value="A(Third Witch)"/>
+  <item type="dialog" id="D(9)" field="TEXT" value="There to meet with Macbeth."/>
+  <item type="dialog" id="D(9)" field="SOUND" value=""/>
+  <item type="dialog" id="D(9)" field="FUCTION" value=""/>
+  <item type="dialog" id="D(9)" field="NEXT" value="D(10)|D(17)|D(18)"/>
+  <item type="dialog" id="D(9)" field="STATE" value=""/>
+  <item type="dialog" id="D(9)" field="CONDITION" value=""/>
+  <item type="dialog" id="D(9)" field="TITLE" value=""/>
+  <item type="dialog" id="D(9)" field="DESCRIPTION" value=""/>
+  <item type="dialog" id="D(10)" field="ID" value="D(10)"/>
+  <item type="dialog" id="D(10)" field="TAG" value=""/>
+  <item type="dialog" id="D(10)" field="ACTOR_TAG" value="A(First Witch)"/>
+  <item type="dialog" id="D(10)" field="TEXT" value="I come, Gray-Malkin."/>
+  <item type="dialog" id="D(10)" field="SOUND" value=""/>
+  <item type="dialog" id="D(10)" field="FUCTION" value=""/>
+  <item type="dialog" id="D(10)" field="NEXT" value="D(11)"/>
+  <item type="dialog" id="D(10)" field="STATE" value=""/>
+  <item type="dialog" id="D(10)" field="CONDITION" value=""/>
+  <item type="dialog" id="D(10)" field="TITLE" value=""/>
+  <item type="dialog" id="D(10)" field="DESCRIPTION" value=""/>
+  <item type="dialog" id="D(11)" field="ID" value="D(11)"/>
+  <item type="dialog" id="D(11)" field="TAG" value=""/>
+  <item type="dialog" id="D(11)" field="ACTOR_TAG" value="A(All Witches)"/>
+  <item type="dialog" id="D(11)" field="TEXT" value="Padock, calls anon: fair is foule, and foule is fair. Hover through the fog and filthy air."/>
+  <item type="dialog" id="D(11)" field="SOUND" value=""/>
+  <item type="dialog" id="D(11)" field="FUCTION" value=""/>
+  <item type="dialog" id="D(11)" field="NEXT" value=""/>
+  <item type="dialog" id="D(11)" field="STATE" value=""/>
+  <item type="dialog" id="D(11)" field="CONDITION" value=""/>
+  <item type="dialog" id="D(11)" field="TITLE" value=""/>
+  <item type="dialog" id="D(11)" field="DESCRIPTION" value=""/>
+  <item type="dialog" id="D(12)" field="ID" value="D(12)"/>
+  <item type="dialog" id="D(12)" field="TAG" value=""/>
+  <item type="dialog" id="D(12)" field="ACTOR_TAG" value="A(First Witch)"/>
+  <item type="dialog" id="D(12)" field="TEXT" value="When mist and darkness surround us?"/>
+  <item type="dialog" id="D(12)" field="SOUND" value=""/>
+  <item type="dialog" id="D(12)" field="FUCTION" value=""/>
+  <item type="dialog" id="D(12)" field="NEXT" value="D(3)"/>
+  <item type="dialog" id="D(12)" field="STATE" value=""/>
+  <item type="dialog" id="D(12)" field="CONDITION" value=""/>
+  <item type="dialog" id="D(12)" field="TITLE" value=""/>
+  <item type="dialog" id="D(12)" field="DESCRIPTION" value=""/>
+  <item type="dialog" id="D(13)" field="ID" value="D(13)"/>
+  <item type="dialog" id="D(13)" field="TAG" value=""/>
+  <item type="dialog" id="D(13)" field="ACTOR_TAG" value="A(First Witch)"/>
+  <item type="dialog" id="D(13)" field="TEXT" value="On the seventh day of the the moon?"/>
+  <item type="dialog" id="D(13)" field="SOUND" value=""/>
+  <item type="dialog" id="D(13)" field="FUCTION" value=""/>
+  <item type="dialog" id="D(13)" field="NEXT" value="D(3)"/>
+  <item type="dialog" id="D(13)" field="STATE" value=""/>
+  <item type="dialog" id="D(13)" field="CONDITION" value=""/>
+  <item type="dialog" id="D(13)" field="TITLE" value=""/>
+  <item type="dialog" id="D(13)" field="DESCRIPTION" value=""/>
+  <item type="dialog" id="D(14)" field="ID" value="D(14)"/>
+  <item type="dialog" id="D(14)" field="TAG" value=""/>
+  <item type="dialog" id="D(14)" field="ACTOR_TAG" value="A(Second Witch)"/>
+  <item type="dialog" id="D(14)" field="TEXT" value="When lives end and death returns."/>
+  <item type="dialog" id="D(14)" field="SOUND" value=""/>
+  <item type="dialog" id="D(14)" field="FUCTION" value=""/>
+  <item type="dialog" id="D(14)" field="NEXT" value="D(6)"/>
+  <item type="dialog" id="D(14)" field="STATE" value=""/>
+  <item type="dialog" id="D(14)" field="CONDITION" value=""/>
+  <item type="dialog" id="D(14)" field="TITLE" value=""/>
+  <item type="dialog" id="D(14)" field="DESCRIPTION" value=""/>
+  <item type="dialog" id="D(15)" field="ID" value="D(15)"/>
+  <item type="dialog" id="D(15)" field="TAG" value=""/>
+  <item type="dialog" id="D(15)" field="ACTOR_TAG" value="A(Second Witch)"/>
+  <item type="dialog" id="D(15)" field="TEXT" value="Around the castle."/>
+  <item type="dialog" id="D(15)" field="SOUND" value=""/>
+  <item type="dialog" id="D(15)" field="FUCTION" value=""/>
+  <item type="dialog" id="D(15)" field="NEXT" value="D(9)"/>
+  <item type="dialog" id="D(15)" field="STATE" value=""/>
+  <item type="dialog" id="D(15)" field="CONDITION" value=""/>
+  <item type="dialog" id="D(15)" field="TITLE" value=""/>
+  <item type="dialog" id="D(15)" field="DESCRIPTION" value=""/>
+  <item type="dialog" id="D(16)" field="ID" value="D(16)"/>
+  <item type="dialog" id="D(16)" field="TAG" value=""/>
+  <item type="dialog" id="D(16)" field="ACTOR_TAG" value="A(Second Witch)"/>
+  <item type="dialog" id="D(16)" field="TEXT" value="By the great elm in the woods."/>
+  <item type="dialog" id="D(16)" field="SOUND" value=""/>
+  <item type="dialog" id="D(16)" field="FUCTION" value=""/>
+  <item type="dialog" id="D(16)" field="NEXT" value="D(9)"/>
+  <item type="dialog" id="D(16)" field="STATE" value=""/>
+  <item type="dialog" id="D(16)" field="CONDITION" value=""/>
+  <item type="dialog" id="D(16)" field="TITLE" value=""/>
+  <item type="dialog" id="D(16)" field="DESCRIPTION" value=""/>
+  <item type="dialog" id="D(17)" field="ID" value="D(17)"/>
+  <item type="dialog" id="D(17)" field="TAG" value=""/>
+  <item type="dialog" id="D(17)" field="ACTOR_TAG" value="A(First Witch)"/>
+  <item type="dialog" id="D(17)" field="TEXT" value="May the outcome serve us well."/>
+  <item type="dialog" id="D(17)" field="SOUND" value=""/>
+  <item type="dialog" id="D(17)" field="FUCTION" value=""/>
+  <item type="dialog" id="D(17)" field="NEXT" value="D(11)"/>
+  <item type="dialog" id="D(17)" field="STATE" value=""/>
+  <item type="dialog" id="D(17)" field="CONDITION" value=""/>
+  <item type="dialog" id="D(17)" field="TITLE" value=""/>
+  <item type="dialog" id="D(17)" field="DESCRIPTION" value=""/>
+  <item type="dialog" id="D(18)" field="ID" value="D(18)"/>
+  <item type="dialog" id="D(18)" field="TAG" value=""/>
+  <item type="dialog" id="D(18)" field="ACTOR_TAG" value="A(First Witch)"/>
+  <item type="dialog" id="D(18)" field="TEXT" value="And so its told."/>
+  <item type="dialog" id="D(18)" field="SOUND" value=""/>
+  <item type="dialog" id="D(18)" field="FUCTION" value=""/>
+  <item type="dialog" id="D(18)" field="NEXT" value="D(11)"/>
+  <item type="dialog" id="D(18)" field="STATE" value=""/>
+  <item type="dialog" id="D(18)" field="CONDITION" value=""/>
+  <item type="dialog" id="D(18)" field="TITLE" value=""/>
+  <item type="dialog" id="D(18)" field="DESCRIPTION" value=""/>
+</items>

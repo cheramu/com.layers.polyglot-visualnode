@@ -1,0 +1,9 @@
+node["editor.resource.file"] =
+{
+["name"] =
+"test.xml"
+,
+["path"] =
+"packages/com.layers.polyglot-dialogue/samples/"
+,
+}

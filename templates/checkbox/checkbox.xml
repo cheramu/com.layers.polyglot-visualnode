@@ -1,0 +1,3 @@
+<template>
+    <checkBox  id="control.checkbox"  text="" />
+</template>

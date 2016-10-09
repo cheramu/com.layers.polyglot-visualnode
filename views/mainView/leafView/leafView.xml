@@ -1,0 +1,72 @@
+<template>
+    <window id="leafView" backgroundColor="44,44,44" backgroundStyle="brush" >
+    <boxLayout>
+    <stackContainer  id="leafView.content.stack" >
+    <window id="leafView.content.main" backgroundColor="44,44,44" backgroundStyle="brush" >
+        <boxLayout>
+            <!--  HEADER  -->
+            <window vSizePolicy="fixed" borderStyle="" fixedHeight="3" backgroundStyle="plain" brushId="Toolbar"/>
+
+            <window vSizePolicy="fixed" backgroundColor="44,44,44" borderStyle="plain|top|bottom" fixedHeight="19" backgroundStyle="plain" >
+            <boxLayout direction="horizontal" spacing="0">
+                <label id="leafView.label.text" textAlignment="center" text=""/>
+            </boxLayout>
+            </window>
+
+            <!--  -->
+            <window  borderStyle="bottom|raised" hSizePolicy="expanding" vSizePolicy="fixed" fixedHeight="26"  >
+            <boxLayout direction="horizontal" spacing="0">
+                <window>
+                    <boxLayout direction="horizontal" spacing="0">
+                        <pushButton   id="leafView.button.add"         icon="pd-icon.add.sibling"      tooltip="Add"    hSizePolicy="fixed" fixedWidth="26" vSizePolicy="fixed" fixedHeight="20" />
+                        <picture margins="0px" icon="pd-icon.sep" pictureSize="16" id="preview" vSizePolicy="fixed" hSizePolicy="fixed" fixedHeight="27"  fixedWidth="10"  />
+                        <pushButton   id="leafView.button.edit"  iconSize="16"      icon="pd-icon.edit"   tooltip="Rename" hSizePolicy="fixed" fixedWidth="22" vSizePolicy="fixed" fixedHeight="16" />
+                        <picture margins="0px" icon="pd-icon.sep" pictureSize="16" id="preview" vSizePolicy="fixed" hSizePolicy="fixed" fixedHeight="27"  fixedWidth="10"  />
+                        <pushButton   id="leafView.button.remove"      icon="pd-icon.remove"   tooltip="Remove" hSizePolicy="fixed" fixedWidth="26" vSizePolicy="fixed" fixedHeight="20" />
+                        <boxLayoutItem  type="stretch"/>
+                        <instantiate id="leafView.fastfilter" library="com.shiva.editor.common.lib" template="FastFilter" />
+                    </boxLayout>
+                </window>
+            </boxLayout>
+            </window>
+
+
+            <!--  CONTENT  -->
+            <boxLayoutItem >
+            <tree id="leafView.content" filter="true" showChildrenOfUnfilteredItems="false"  iconSize="16" indentation="18" sort="true" filter="true" headers="true" marginTop="2" marginLeft="1" marginBottom="1" marginRight="1"  borderStyle="left|bottom|right|raised" hSizePolicy="expanding" vSizePolicy="expanding" fixedRowHeight="20">
+                <column  position="1"  headerText="field"        fixedSize="120" fileDisplay="fullname" />
+                <column  position="2"  headerText="value"       fixedSize="120"  fileDisplay="size" />
+            </tree>
+            </boxLayoutItem>
+        </boxLayout>
+
+        <!--  CONTEXT MENU  -->
+        <menu id="leafView.contextmenu" >
+            <menuItem id="leafView.contextmenu.add" text="Add..." icon="pd-icon.add.sibling"> </menuItem>
+            <menuItem type="separator" />
+            <menuItem id="leafView.contextmenu.edit" text="Rename" icon="pd-icon.edit" > </menuItem>
+            <menuItem type="separator" />
+            <menuItem id="leafView.contextmenu.remove" text="Remove" icon="pd-icon.remove" >  </menuItem>
+        </menu>
+
+        <connect sender="leafView.content" event="kEventCustomContextMenuRequested" handler="onContextMenuRequestedchildView"/>
+        <connect sender="leafView.content" event="kEventTreeItemDoubleClicked"        handler="onLeafViewTreeItemDoubleClicked" />
+        <connect sender="leafView.content" event="kEventTreeItemItemSelectionChanged" handler="onLewfViewwTreeItemSelectionChanged" />
+        <connect sender="leafView.content" event="kEventTreeItemClicked" handler="onLeafViewEventTreeItemClicked" />
+
+        <!-- CONNECTS -->
+        <connect sender="leafView.contextmenu.add"    event="kEventMenuActionTriggered" handler="onLeafViewTreeContextMenuAddField" />
+        <connect sender="leafView.contextmenu.remove" event="kEventMenuActionTriggered" handler="onLeafViewTreeContextMenuRemoveField" />
+        <connect sender="leafView.contextmenu.edit"   event="kEventMenuActionTriggered" handler="onLeafViewTreeContextMenuRenameNode" />
+
+        <connect sender="leafView.button.add"       event="kEventButtonClicked"                handler="onLeafViewTreeContextMenuAddField" />
+        <connect sender="leafView.button.remove"    event="kEventButtonClicked"                handler="onLeafViewTreeContextMenuRemoveField" />
+        <connect sender="leafView.button.edit"      event="kEventButtonClicked"                handler="onLeafViewTreeContextMenuRenameNode" />
+        <connect handler="onLeafViewFastFilterChanged" event="onFastFilterHasChanged ( hView, hComponent, sFilter )" sender="leafView.fastfilter"/>
+    </window>
+    </stackContainer>
+    </boxLayout>
+    </window>
+
+    <include file="leafView.lua"/>
+</template>

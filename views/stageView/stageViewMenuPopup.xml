@@ -1,0 +1,17 @@
+<menu id="stageView.menu.popup" type="popUp" orientation="vertical" >
+
+    <menuItem id="stageView.menu.addNode" icon="pd-icon.add.child" text="Add node..."               />
+    <menuItem id="stageView.menu.addNodeTypeGroup" icon="pd-icon.add.child"  text="Add node"          type="subMenu" >
+        <menu id="stageView.menu.addNodeType"      type="popUp"              orientation="vertical" >
+            <menuItem id="stageView.menu.node"        text="Node"          />
+        </menu>
+    </menuItem>
+
+    <menuItem type="separator"/>
+
+    <!-- LINK NODES MENU -->
+    <menuItem id="stageView.menu.linkNodeGroup"  icon="pd-icon.link"             text="Link node"          type="subMenu" >
+        <menu id="stageView.menu.linkNode"      type="popUp"              orientation="vertical" ></menu>
+    </menuItem>
+
+</menu>

@@ -1,0 +1,39 @@
+node["editor.package"] =
+{
+["active"] =
+"false"
+,
+["author"] =
+"-"
+,
+["description"] =
+"Adds a node dekstop to ShiVa"
+,
+["email"] =
+"-"
+,
+["icon"] =
+" "
+,
+["id"] =
+"com.layers.polyglot-desktop"
+,
+["name"] =
+"polyglot-desktop"
+,
+["package-file"] =
+"package.xml"
+,
+["readme-file"] =
+"README.md"
+,
+["repository-url"] =
+" "
+,
+["version"] =
+"latest"
+,
+["website"] =
+"-"
+,
+}

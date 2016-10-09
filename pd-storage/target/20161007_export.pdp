@@ -1,0 +1,35 @@
+<items>
+
+<item type="dialog" id="d(1)" field="SOUND" value="" />
+<item type="dialog" id="d(1)" field="ACTOR_TAG" value="" />
+<item type="dialog" id="d(1)" field="TEXT" value="hello" />
+<item type="dialog" id="d(1)" field="STATE" value="" />
+<item type="dialog" id="d(1)" field="NEXT" value="" />
+<item type="dialog" id="d(1)" field="TITLE" value="" />
+<item type="dialog" id="d(1)" field="ID" value="" />
+<item type="dialog" id="d(1)" field="TEXT-ja-JP" value="" />
+<item type="dialog" id="d(1)" field="BACKGROUND" value="" />
+<item type="dialog" id="d(1)" field=".links" value="457ff4c88f67004dbdc409a0f889edbd6aab1a65" />
+<item type="dialog" id="d(1)" field="DESCRIPTION" value="" />
+<item type="dialog" id="d(1)" field="FUCTION" value="" />
+<item type="dialog" id="d(1)" field="TYPE" value="" />
+<item type="dialog" id="d(1)" field="TAG" value="" />
+<item type="dialog" id="d(1)" field="CONDITION" value="" />
+
+<item type="dialog" id="d(2)" field="SOUND" value="" />
+<item type="dialog" id="d(2)" field="DESCRIPTION" value="" />
+<item type="dialog" id="d(2)" field="TEXT" value="world" />
+<item type="dialog" id="d(2)" field="CONDITION" value="" />
+<item type="dialog" id="d(2)" field="NEXT" value="" />
+<item type="dialog" id="d(2)" field="TITLE" value="" />
+<item type="dialog" id="d(2)" field="ID" value="" />
+<item type="dialog" id="d(2)" field="TEXT-ja-JP" value="" />
+<item type="dialog" id="d(2)" field="BACKGROUND" value="" />
+<item type="dialog" id="d(2)" field=".links" value="736e7a10ad23f508dfa085082839b2c3c8b92a09" />
+<item type="dialog" id="d(2)" field="STATE" value="" />
+<item type="dialog" id="d(2)" field="FUCTION" value="" />
+<item type="dialog" id="d(2)" field="TYPE" value="" />
+<item type="dialog" id="d(2)" field="TAG" value="" />
+<item type="dialog" id="d(2)" field="ACTOR_TAG" value="" />
+
+</items>

@@ -1,0 +1,60 @@
+<!-- export xml  -->
+
+<items>
+  <item type="text" id="T(0)" field="TITLE_EXAMPLE" value="hoi" />
+  <item type="text" id="T(0)" field="TITLE_EXAMPLE-ja-JP" value="konichiwa" />
+  <item type="text" id="T(0)" field="SUBTITLE_EXAMPLE" value="gaat het goed" />
+  <item type="text" id="T(0)" field="SUBTITLE_EXAMPLE-ja-JP" value="genki des ka" />
+
+  <item type="actor" id="A(narrator)" field="TAG" value="A(narrator)" />
+  <item type="actor" id="A(narrator)" field="NAME" value="narrator" />
+  <item type="actor" id="A(narrator)" field="AGE" value="" />
+  <item type="actor" id="A(narrator)" field="BLOODTYPE" value="" />
+  <item type="actor" id="A(narrator)" field="BIRTHSIGN" value="" />
+  <item type="actor" id="A(narrator)" field="GENDER" value="" />
+  <item type="actor" id="A(narrator)" field="PICTURE" value="" />
+  <item type="actor" id="A(narrator)" field="DESCRIPTION" value="" />
+
+  <item type="dialog-type" id="dialog-type" field="ID" value="ID"/>
+  <item type="dialog-type" id="dialog-type" field="TAG" value="TAG"/>
+  <item type="dialog-type" id="dialog-type" field="ACTOR_TAG" value="ACTOR_TAG"/>
+  <item type="dialog-type" id="dialog-type" field="TEXT" value="TEXT"/>
+  <item type="dialog-type" id="dialog-type" field="BACKGROUND" value="BACKGROUND"/>
+  <item type="dialog-type" id="dialog-type" field="SOUND" value="SOUND"/>
+  <item type="dialog-type" id="dialog-type" field="FUCTION" value="FUCTION"/>
+  <item type="dialog-type" id="dialog-type" field="NEXT" value="NEXT"/>
+  <item type="dialog-type" id="dialog-type" field="STATE" value="STATE"/>
+  <item type="dialog-type" id="dialog-type" field="CONDITION" value="CONDITION"/>
+  <item type="dialog-type" id="dialog-type" field="TITLE" value="TITLE"/>
+  <item type="dialog-type" id="dialog-type" field="DESCRIPTION" value="DESCRIPTION"/>
+
+  <item type="conversation" id="D(0)" field="ID" value="D(0)" />
+
+  <item type="dialog" id="D(0)" field="ID" value="D(0)" />
+  <item type="dialog" id="D(0)" field="TAG" value="" />
+  <item type="dialog" id="D(0)" field="ACTOR_TAG" value="A(narrator)" />
+  <item type="dialog" id="D(0)" field="TEXT" value="a polyglot-dialgoue example" />
+  <item type="dialog" id="D(0)" field="TEXT-ja-JP" value="" />
+  <item type="dialog" id="D(0)" field="BACKGROUND" value="" />
+  <item type="dialog" id="D(0)" field="SOUND" value="" />
+  <item type="dialog" id="D(0)" field="FUCTION" value="" />
+  <item type="dialog" id="D(0)" field="NEXT" value="D(1)" />
+  <item type="dialog" id="D(0)" field="STATE" value="" />
+  <item type="dialog" id="D(0)" field="CONDITION" value="" />
+  <item type="dialog" id="D(0)" field="TITLE" value="" />
+  <item type="dialog" id="D(0)" field="DESCRIPTION" value="" />
+
+  <item type="dialog" id="D(1)" field="ID" value="D(1)" />
+  <item type="dialog" id="D(1)" field="TAG" value="" />
+  <item type="dialog" id="D(1)" field="ACTOR_TAG" value="A(narrator)" />
+  <item type="dialog" id="D(1)" field="TEXT" value="Hello World" />
+  <item type="dialog" id="D(1)" field="TEXT-ja-JP" value="" />
+  <item type="dialog" id="D(1)" field="BACKGROUND" value="globe" />
+  <item type="dialog" id="D(1)" field="SOUND" value="" />
+  <item type="dialog" id="D(1)" field="FUCTION" value="" />
+  <item type="dialog" id="D(1)" field="NEXT" value="" />
+  <item type="dialog" id="D(1)" field="STATE" value="" />
+  <item type="dialog" id="D(1)" field="CONDITION" value="" />
+  <item type="dialog" id="D(1)" field="TITLE" value="" />
+  <item type="dialog" id="D(1)" field="DESCRIPTION" value="" />
+</items>

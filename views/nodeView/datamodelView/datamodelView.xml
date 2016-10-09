@@ -1,0 +1,73 @@
+<template>
+    <window id="datamodelView" backgroundColor="44,44,44" backgroundStyle="brush" >
+    <boxLayout>
+    <stackContainer  id="datamodelView.content.stack" >
+    <window id="datamodelView.content.main" backgroundColor="44,44,44" backgroundStyle="brush" >
+        <boxLayout>
+            <!--  HEADER  -->
+            <window vSizePolicy="fixed" borderStyle="" fixedHeight="3" backgroundStyle="plain" brushId="Toolbar"/>
+
+            <window vSizePolicy="fixed" backgroundColor="44,44,44" borderStyle="plain|top|bottom" fixedHeight="19" backgroundStyle="plain" >
+            <boxLayout direction="horizontal" spacing="0">
+                <label id="datamodelView.label.text" textAlignment="center" text=""/>
+            </boxLayout>
+            </window>
+
+            <window  borderStyle="bottom|raised" hSizePolicy="expanding" vSizePolicy="fixed" fixedHeight="26"  >
+            <boxLayout direction="horizontal" spacing="0">
+                <window>
+                    <boxLayout direction="horizontal" spacing="0">
+                        <pushButton   id="datamodelView.button.add"         icon="pd-icon.add.sibling"      tooltip="Add"    hSizePolicy="fixed" fixedWidth="26" vSizePolicy="fixed" fixedHeight="20" />
+                        <picture margins="0px" icon="pd-icon.sep" pictureSize="16" id="preview" vSizePolicy="fixed" hSizePolicy="fixed" fixedHeight="27"  fixedWidth="10"  />
+                        <pushButton   id="datamodelView.button.edit"        icon="pd-icon.edit"   tooltip="Edit" hSizePolicy="fixed" fixedWidth="26" vSizePolicy="fixed" fixedHeight="20" />
+                        <picture margins="0px" icon="pd-icon.sep" pictureSize="16" id="preview" vSizePolicy="fixed" hSizePolicy="fixed" fixedHeight="27"  fixedWidth="10"  />
+                        <pushButton   id="datamodelView.button.remove"      icon="pd-icon.remove"   tooltip="Remove" hSizePolicy="fixed" fixedWidth="26" vSizePolicy="fixed" fixedHeight="20" />
+                        <boxLayoutItem  type="stretch"/>
+                        <instantiate id="datamodelView.fastfilter" library="com.shiva.editor.common.lib" template="FastFilter" />
+                    </boxLayout>
+                </window>
+            </boxLayout>
+            </window>
+
+            <!--  CONTENT  -->
+            <boxLayoutItem >
+            <tree id="datamodelView.content"   iconSize="16" indentation="18" sort="true" filter="true" headers="true" marginTop="2" marginLeft="1" marginBottom="1" marginRight="1"  borderStyle="left|bottom|right|raised" hSizePolicy="expanding" vSizePolicy="expanding" fixedRowHeight="20">
+                <column  position="1"  headerText="field"        fixedSize="120" fileDisplay="fullname" />
+                <column  position="2"  headerText="value"       fixedSize="120"  fileDisplay="size" />
+            </tree>
+            </boxLayoutItem>
+        </boxLayout>
+
+        <!--  CONTEXT MENU  -->
+        <menu id="datamodelView.contextmenu" >
+            <menuItem id="datamodelView.contextmenu.add" text="Add..." icon="pd-icon.add.sibling"> </menuItem>
+            <menuItem type="separator" />
+            <menuItem id="datamodelView.contextmenu.edit" text="Edit" icon="pd-icon.edit" > </menuItem>
+            <menuItem type="separator" />
+            <menuItem id="datamodelView.contextmenu.remove" text="Remove" icon="pd-icon.remove" >  </menuItem>
+        </menu>
+
+         <!-- <connect sender="datamodelView.content" event="kEventTreeItemClicked" handler="onEventTreeItemClicked" /> -->
+         <connect sender="datamodelView.content" event="kEventCustomContextMenuRequested" handler="onContextMenuRequestedDatamodelView"/>
+
+        <!-- CONNECTS -->
+        <connect sender="datamodelView.contextmenu.add"           event="kEventMenuActionTriggered" handler="onDatamodelViewTreeContextMenuAddField" />
+        <connect sender="datamodelView.contextmenu.remove"        event="kEventMenuActionTriggered" handler="onDatamodelViewTreeContextMenuRemoveField" />
+        <connect sender="datamodelView.contextmenu.edit"        event="kEventMenuActionTriggered" handler="onDatamodelViewTreeContextMenuEditField" />
+
+        <connect sender="datamodelView.button.add"       event="kEventButtonClicked"                handler="onDatamodelViewTreeContextMenuAddField" />
+        <connect sender="datamodelView.button.remove"    event="kEventButtonClicked"                handler="onDatamodelViewTreeContextMenuRemoveField" />
+        <connect sender="datamodelView.button.edit"      event="kEventButtonClicked"                handler="onDatamodelViewTreeContextMenuEditField" />
+        <connect sender="datamodelView.fastfilter"       event="onFastFilterHasChanged ( hView, hComponent, sFilter )" handler="onDatamodelViewFastFilterChanged" />
+
+        <!--
+        <connect sender="datamodelView.tree"             event="kEventTreeItemItemSelectionChanged" handler="onPropertyViewSectionEnvironmentSelectionChanged" />
+        <connect sender="datamodelView.tree"             event="kEventTreeItemDoubleClicked"        handler="onPropertyViewSectionEnvironmentItemDoubleClicked" />
+        <connect sender="datamodelView.tree"             event="kEventCustomContextMenuRequested"   handler="onPropertyViewSectionEnvironmentItemRightClicked"/>
+           -->
+    </window>
+    </stackContainer>
+    </boxLayout>
+    </window>
+    <include file="datamodelView.lua"/>
+</template>

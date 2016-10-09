@@ -1,0 +1,6 @@
+<library id="Views" >
+    <include file="views.lua"/>
+    <include file="propertyView/propertyView.xml"/>
+    <include file="stageView/stageView.xml"/>
+    <include file="outlinerView/outlinerView.xml"/>
+</library>

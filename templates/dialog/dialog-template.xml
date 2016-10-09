@@ -1,0 +1,8 @@
+<template>
+    <gridLayout  id="dialog-template"  marginLeft="20" marginTop="15" marginRight="10" marginBottom="15" verticalSpacing="5" horizontalSpacing="15" columnMinimumWidth="1:120">
+
+        <gridLayoutItem row="1"  column="1"  columnSpan="1" ><label id="dialogTemplate.label" value="" textAlignment="left|vCenter" vSizePolicy="fixed" borderStyle="" fixedHeight="20" /></gridLayoutItem>
+
+    </gridLayout>
+    <include file="dialog-template.lua" />
+</template>

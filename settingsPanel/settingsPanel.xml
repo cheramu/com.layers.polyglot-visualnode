@@ -1,0 +1,36 @@
+
+<moduleSettingPanel>
+    <scrollContainer  >
+        <window >
+            <boxLayout direction="vertical" spacing="0" >
+                <collapseContainer  text="General" collapsed="false" hSizePolicy="expanding" vSizePolicy="fixed" frameStyle="noFrame">
+                    <gridLayout marginLeft="20" marginTop="5" marginRight="10" marginBottom="15" verticalSpacing="5" horizontalSpacing="15" columnMinimumWidth="1:300">
+
+                        <gridLayoutItem row="1" column="1" ><label       value="test" textAlignment="left|vCenter" vSizePolicy="fixed" fixedHeight="20" /></gridLayoutItem>
+                        <gridLayoutItem row="1" column="2" ><instantiate id="optionCheckShowDesktop" library="com.shiva.editor.common.lib" template="PropertyControlCheckBox" /></gridLayoutItem>
+
+                    </gridLayout>
+                </collapseContainer>
+                <collapseContainer  text="Views" collapsed="false" hSizePolicy="expanding" vSizePolicy="fixed" frameStyle="noFrame">
+                    <gridLayout marginLeft="20" marginTop="5" marginRight="10" marginBottom="15" verticalSpacing="5" horizontalSpacing="15" columnMinimumWidth="1:300">
+
+                        <gridLayoutItem row="1" column="1" ><label       value="test" textAlignment="left|vCenter" vSizePolicy="fixed" fixedHeight="20" /></gridLayoutItem>
+                        <gridLayoutItem row="1" column="2" ><instantiate id="optionCheckShowScreenplay" library="com.shiva.editor.common.lib" template="PropertyControlCheckBox" /></gridLayoutItem>
+
+                    </gridLayout>
+                </collapseContainer>
+                <window vSizePolicy="expanding" hSizePolicy="expanding" />
+            </boxLayout>
+        </window>
+    </scrollContainer>
+
+    <!-- INCLUDE -->
+    <include file="settingsPanel.lua"/>
+
+    <!-- CONNECT -->
+    <connect event="kEventSettingPanelNotifyShow" handler="onSettingPanelShow" />
+
+    <connect sender="optionCheckShowDesktop"  event="onExtendedControlCheckValueHasChanged ( hView, hInstance, kCheckState )"      handler="optionCheckShowDesktopChanged"  />
+    <connect sender="optionCheckShowScreenplay"  event="onExtendedControlCheckValueHasChanged ( hView, hInstance, kCheckState )"      handler="optionCheckShowDesktopDevChanged"  />
+
+</moduleSettingPanel>

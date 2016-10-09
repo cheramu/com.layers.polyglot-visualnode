@@ -1,0 +1,3 @@
+<template>
+	<editBox id="control.editbox" text="" />	
+</template>

@@ -1,0 +1,46 @@
+<template>
+    <window id="modifydataView"  backgroundColor="44,44,44" backgroundStyle="brush">
+        <boxLayout>
+            <!--  HEADER  -->
+            <window vSizePolicy="fixed" borderStyle="" fixedHeight="3" backgroundStyle="plain" brushId="Toolbar"/>
+
+            <window vSizePolicy="fixed" backgroundColor="44,44,44" borderStyle="plain|top|bottom" fixedHeight="19" backgroundStyle="plain" >
+            <boxLayout direction="horizontal" spacing="0">
+                <label id="modifydataView.label.text" textAlignment="center" text=""/>
+            </boxLayout>
+            </window>
+
+            <window  borderStyle="bottom|raised" hSizePolicy="expanding" vSizePolicy="fixed" fixedHeight="26"  >
+            <boxLayout direction="horizontal" spacing="0">
+                <window>
+                    <boxLayout direction="horizontal" spacing="0">
+                        <pushButton   id="modifydataView.button.save"         icon="pd-icon.save"      tooltip="Save"    hSizePolicy="fixed" fixedWidth="26" vSizePolicy="fixed" fixedHeight="20" />
+                        <boxLayoutItem  type="stretch"/>
+                        <!--
+                        <pushButton   id="modifydataView.button.add"         icon="pd-icon.add.sibling"      tooltip="Add"    hSizePolicy="fixed" fixedWidth="26" vSizePolicy="fixed" fixedHeight="20" />
+                        <picture margins="0px" icon="pd-icon.sep" pictureSize="16" id="preview" vSizePolicy="fixed" hSizePolicy="fixed" fixedHeight="27"  fixedWidth="10"  />
+                        <pushButton   id="modifydataView.button.edit"        icon="pd-icon.edit"   tooltip="Edit" hSizePolicy="fixed" fixedWidth="26" vSizePolicy="fixed" fixedHeight="20" />
+                        <picture margins="0px" icon="pd-icon.sep" pictureSize="16" id="preview" vSizePolicy="fixed" hSizePolicy="fixed" fixedHeight="27"  fixedWidth="10"  />
+                        <pushButton   id="modifydataView.button.remove"      icon="pd-icon.remove"   tooltip="Remove" hSizePolicy="fixed" fixedWidth="26" vSizePolicy="fixed" fixedHeight="20" />
+                        <boxLayoutItem  type="stretch"/>
+                        <instantiate id="section.environment.fastfilter" library="com.shiva.editor.common.lib" template="FastFilter" />
+                        -->
+                    </boxLayout>
+                </window>
+            </boxLayout>
+            </window>
+
+            <!--  CONTENT  -->
+            <scrollContainer id="modifydataView.content" minimumHeight="250" hSizePolicy="expanding" >
+                <window>
+                    <boxLayout id="modifydataView.content.components" vSizePolicy="expanding" hSizePolicy="expanding"   direction="vertical" />
+                </window>
+            </scrollContainer>
+        </boxLayout>
+
+        <!-- CONNECTS -->
+        <connect sender="modifydataView.button.save"       event="kEventButtonClicked"                handler="onmodifydataViewTreeContextMenuSave" />
+
+    </window>
+    <include file="modifydataView.lua"/>
+</template>

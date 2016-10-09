@@ -1,0 +1,104 @@
+<template>
+    <moduleView id="StageView" backgroundStyle="plain" backgroundColor="56,56,56">
+        <!-- LAYOUT -->
+        <boxLayout direction="vertical" spacing="0">
+
+            <!--  HEADER  -->
+            <window id="Header" borderStyle="plain">
+            <boxLayout direction="horizontal" spacing="0">
+                <label minimumWidth="8" text=""/>
+                <label    value="" textAlignment="left|vCenter" vSizePolicy="fixed" borderStyle="" fixedHeight="26" />
+                <boxLayoutItem  type="stretch"/>
+                <picture  icon="polyglot-dialogueIcon" pictureSize="64" id="preview" hSizePolicy="fixed" vSizePolicy="fixed" fixedWidth="16" fixedHeight="16" />
+                <label text=""/>
+            </boxLayout>
+            </window>
+
+            <!--  HEADER  -->
+            <window vSizePolicy="fixed" backgroundColor="44,44,44" borderStyle="plain|top|bottom" fixedHeight="19" backgroundStyle="plain" >
+            <boxLayout direction="horizontal" spacing="0">
+                <label id="datamodelView.label.text" textAlignment="center" text=""/>
+            </boxLayout>
+            </window>
+            <window borderStyle="bottom|plain">
+                <boxLayout direction="vertical" spacing="0" >
+                    <boxLayoutItem  type="spacing" size="2"/>
+                    <window  vSizePolicy="fixed" fixedHeight="20">
+                        <boxLayout direction="horizontal" spacing="0">
+                            <boxLayoutItem  type="spacing" size="4"/>
+                            <toggleButton id="tool.select"    tooltip="Toggle select tool\n#lt;i#gt;Long press for advanced settings#lt;/i#gt;"      icon="Select"    drawFocus="false" vSizePolicy="fixed" fixedHeight="18" hSizePolicy="fixed" fixedWidth="26" backgroundStyle="plain" />
+                            <toggleButton id="tool.translate" tooltip="Toggle translation tool\n#lt;i#gt;Long press for advanced settings#lt;/i#gt;" icon="Translate" drawFocus="false" vSizePolicy="fixed" fixedHeight="18" hSizePolicy="fixed" fixedWidth="26" backgroundStyle="plain" />
+                            <toggleButton id="tool.rotate"    tooltip="Toggle rotation tool\n#lt;i#gt;Long press for advanced settings#lt;/i#gt;"    icon="Rotate"    drawFocus="false" vSizePolicy="fixed" fixedHeight="18" hSizePolicy="fixed" fixedWidth="26" backgroundStyle="plain" />
+                            <toggleButton id="tool.scale"     tooltip="Toggle scale tool\n#lt;i#gt;Long press for advanced settings#lt;/i#gt;"       icon="Scale"     drawFocus="false" vSizePolicy="fixed" fixedHeight="18" hSizePolicy="fixed" fixedWidth="26" backgroundStyle="plain" />
+                            <boxLayoutItem  type="spacing" size="4"/>
+                            <pushButton   id="tool.space"     icon="SpaceGlobal"  tooltip="Global space" drawFocus="false" vSizePolicy="fixed" fixedHeight="18" hSizePolicy="fixed" fixedWidth="26" />
+                            <boxLayoutItem  hSizePolicy="expanding" type="spacing" />
+                             <boxLayoutItem  type="stretch"  />
+                            <instantiate id="fastfilter" library="com.shiva.editor.common.lib" template="FastFilter" />
+                            <buttonGroup exclusive="true">
+                                <buttonGroupItem id="tool.select"    />
+                                <buttonGroupItem id="tool.translate" />
+                                <buttonGroupItem id="tool.rotate"    />
+                                <buttonGroupItem id="tool.scale"     />
+                            </buttonGroup>
+                        </boxLayout>
+                    </window>
+                    <boxLayoutItem  type="spacing" size="3"/>
+                </boxLayout>
+            </window>
+             <!--  CONTENT  -->
+            <stackContainer id="root">
+                <instantiate id="loading" library="com.shiva.editor.common.lib" template="InnerDialogLoading" />
+                <!-- 3D VIEW -->
+                <window id="content" backgroundStyle="plain" backgroundColor="32,32,32">
+                    <displayLayout id="RenderViewLayout">
+                        <renderView  id="RenderView" acceptDrops="true" />
+                    </displayLayout>
+                </window>
+            </stackContainer>
+        </boxLayout>
+
+        <!-- INCLUDES -->
+        <include file="stageViewMenuPopup.xml"/>
+        <include file="stageViewPreviewMenuPopup.xml"/>
+        <include file="stageViewMenu.xml"/>
+        <include file="stageView.lua"/>
+
+
+        <include file="graph/graphStageScene.lua"/>
+        <include file="graph/graphStageHud.lua"/>
+        <include file="graph/graphStageView.lua"/>
+
+        <include  file="package-includes.xml" />
+
+        <include file="stageViewDnD.lua"/>
+
+        <!-- CONNECTS -->
+        <connect sender="StageView" event="kEventModuleViewInitialized" handler="onStageViewInit" />
+        <connect sender="StageView" event="kEventModuleViewDestroyed"   handler="onStageViewDestroy" />
+        <connect sender="RenderView"    event="kEventRenderViewWillUpdate"      handler="onStageViewWillUpdate" />
+        <connect sender="RenderView"    event="kEventCustomContextMenuRequested"    handler="onStageViewContextMenu" />
+
+        <connect sender="RenderView" event="kEventRenderViewDoubleClicked"  handler="onStageViewDoubleClicked" />
+
+
+
+        <connect handler="onStageViewSelectToolPressed" event="kEventButtonPressed" sender="tool.select"/>
+        <!-- <connect handler="onStageViewSelectToolReleased" event="kEventButtonReleased" sender="tool.select"/> -->
+        <connect handler="onStageViewTranslationToolPressed" event="kEventButtonPressed" sender="tool.translate"/>
+        <!-- <connect handler="onStageViewTranslationToolReleased" event="kEventButtonReleased" sender="tool.translate"/> -->
+        <connect handler="onStageViewRotationToolPressed" event="kEventButtonPressed" sender="tool.rotate"/>
+        <!-- <connect handler="onStageViewRotationToolReleased" event="kEventButtonReleased" sender="tool.rotate"/> -->
+        <connect handler="onStageViewScaleToolPressed" event="kEventButtonPressed" sender="tool.scale"/>
+        <!-- <connect handler="onStageViewScaleToolReleased" event="kEventButtonReleased" sender="tool.scale"/> -->
+        <connect handler="onStageViewSpaceToolChanged" event="kEventButtonPressed" sender="tool.space"/>
+
+
+        <!-- SHORTCUTS
+        <shortcut  id="save"  context="widgetWithChildrenShortcut" value="@Save"  /><connect sender="save"  event="kEventShortcutActivated" handler="onViewSave"  />
+        <shortcut  id="close" context="widgetWithChildrenShortcut" value="Ctrl+W" /><connect sender="close" event="kEventShortcutActivated" handler="onViewClose" />
+        <shortcut  id="undo"  context="widgetWithChildrenShortcut" value="@Undo"  /><connect sender="undo"  event="kEventShortcutActivated" handler="onViewUndo"  />
+        <shortcut  id="redo"  context="widgetWithChildrenShortcut" value="@Redo"  /><connect sender="redo"  event="kEventShortcutActivated" handler="onViewRedo"  />
+        -->
+    </moduleView>
+</template>

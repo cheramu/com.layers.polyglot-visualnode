@@ -1,0 +1,42 @@
+<template>
+    <scrollContainer id="clp-dialog" borderStyle="left|bottom|right|raised" margins="0" >
+        <window hSizePolicy="expanding" vSizePolicy="expanding" margins="0" borderStyle="none" >
+            <boxLayout  direction="vertical" spacing="0">
+
+                <window margins="0" vSizePolicy="fixed" fixedHeight="25" hSizePolicy="expanding" backgroundStyle="brush" brushId="InnerDialogTitle" borderStyle="top|bottom|raised" >
+                    <boxLayout direction="horizontal" spacing="0" marginLeft="4" marginRight="4">
+                        <picture    icon="Build"                                                       vSizePolicy="fixed" fixedHeight="27" hSizePolicy="fixed" fixedWidth="32"/>
+                        <label  id="clp-dialog.label"      text="%clp-dialog.label%"          fontType="big" fontStyle="italic" vSizePolicy="fixed" fixedHeight="27" hSizePolicy="expanding" textAlignment="left|vCenter" />
+                        <pushButton id="clp-dialog.ok"     icon="Ok"              vSizePolicy="fixed" fixedHeight="27" hSizePolicy="fixed" fixedWidth="32" />
+                        <pushButton id="clp-dialog.cancel" icon="Cancel"          vSizePolicy="fixed" fixedHeight="27" hSizePolicy="fixed" fixedWidth="32" />
+                    </boxLayout>
+                </window>
+
+                <window hSizePolicy="expanding" vSizePolicy="fixed" borderStyle="bottom|raised">
+                    <boxLayout   id="mainViewDialogContent22"  vSizePolicy="expanding" hSizePolicy="expanding" >
+
+                    </boxLayout>
+                </window>
+
+
+                <window borderStyle="none" vSizePolicy="fixed" fixedHeight="16" backgroundStyle="brush" brushId="InnerDialogShadow" />
+                <window borderStyle="none" vSizePolicy="expanding" hSizePolicy="expanding" backgroundStyle="plain" backgroundColor="44,44,44"/>
+
+            </boxLayout>
+
+            <!-- SORTCUTS
+            <shortcut id="clp-dialog.shortcut.ok"     value="Return" /><connect sender="clp-dialog.shortcut.ok"     event="kEventShortcutActivated" handler="onMainViewDialogFileRenameOk" />
+            <shortcut id="clp-dialog.shortcut.cancel" value="Escape" /><connect sender="clp-dialog.shortcut.cancel" event="kEventShortcutActivated" handler="onMainViewDialogFileRenameCancel" />
+            -->
+
+            <!-- CONNECTS -->
+            <connect sender="clp-dialog.ok"     event="kEventButtonClicked" handler="onMainViewDialogFileRenameOk"     />
+            <connect sender="clp-dialog.cancel" event="kEventButtonClicked" handler="onMainViewDialogFileRenameCancel" />
+
+            <!-- INCLUDES -->
+            <include file="dialog.lua" />
+            <include file="dialog_includes.xml" />
+
+        </window>
+    </scrollContainer>
+</template>

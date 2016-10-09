@@ -1,0 +1,24 @@
+<moduleViewMenu>
+
+    <menu id="mainViewMenu" type="anchored" hSizePolicy= "expanding" vSizePolicy= "preferred">
+
+        <!-- FILE -->
+        <menuItem id="" text="File" type="subMenu" tooltip="" >
+            <menu id="mainViewMenu.file" type="popUp" orientation="vertical" >
+                <menuItem id="mainViewMenu.file.settings"  text="Settings..." />
+                <menuItem  type="separator" />
+                <menuItem id="mainViewMenu.file.reload" text="Reload module" />
+            </menu>
+        </menuItem>
+
+    </menu>
+
+    <include file="mainViewMenu.lua"/>
+
+    <!-- CONNECTS -->
+    <connect sender="mainViewMenu.file"          event="kEventMenuWillPopUp"       handler="onMainViewUpdateMenuFile"   />
+    <connect sender="mainViewMenu.file.settings" event="kEventMenuActionTriggered" handler="onMainViewMenuFileSettings" />
+    <connect sender="mainViewMenu.file.reload" event="kEventMenuActionTriggered" handler="onMainViewMenuFileReload" />
+
+</moduleViewMenu>
+

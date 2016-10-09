@@ -1,0 +1,73 @@
+<template>
+    <boxLayout id="dialogNewLogic" >
+     <groupContainer  text="" frameStyle="noFrame" state="false" >
+     <gridLayout marginTop="15" marginBottom="15" horizontalSpacing="5" verticalSpacing="5" columnMinimumWidth="1:70">
+            <gridLayoutItem row="1"  column="1" columnSpan="1"  ><label id="dialogNewLogic.name.new.label" value="Name:" textAlignment="left|vCenter" vSizePolicy="fixed" borderStyle="" fixedHeight="20" /></gridLayoutItem>
+            <gridLayoutItem row="1"  column="2" columnSpan="20" ><editBox placeHolderText="name"  id="dialogNewLogic.name.new"  hSizePolicy="expanding" /></gridLayoutItem>
+
+           <gridLayoutItem row="2"  column="1"  columnSpan="1" ><label id="dialogNewLogic.treewalker.none.label" value="Traverse none" textAlignment="left|vCenter" vSizePolicy="fixed" borderStyle="" fixedHeight="20" /></gridLayoutItem>
+           <gridLayoutItem row="2"  column="2"  columnSpan="20">
+                <window hSizePolicy="expanding">
+                <boxLayout direction="horizontal" >
+                <boxLayoutItem type="stretch" />
+                    <radioButton state="true" id="dialogNewLogic.treewalker.none"  hSizePolicy="expanding" />
+                </boxLayout>
+            </window>
+            </gridLayoutItem>
+            <gridLayoutItem row="3"  column="1"  columnSpan="1" ><label id="dialogNewLogic.treewalker.label" value="Traverse node" textAlignment="left|vCenter" vSizePolicy="fixed" borderStyle="" fixedHeight="20" /></gridLayoutItem>
+            <gridLayoutItem row="3"  column="2"  columnSpan="20">
+                <window hSizePolicy="expanding">
+                <boxLayout direction="horizontal" >
+                <boxLayoutItem type="stretch" />
+                    <radioButton id="dialogNewLogic.treewalker"  hSizePolicy="expanding" />
+                </boxLayout>
+            </window>
+            </gridLayoutItem>
+            <gridLayoutItem row="4"  column="1"  columnSpan="1" ><label id="dialogNewLogic.treewalker.linked.label" value="Traverse node linked" textAlignment="left|vCenter" vSizePolicy="fixed" borderStyle="" fixedHeight="20" /></gridLayoutItem>
+            <gridLayoutItem row="4"  column="2"  columnSpan="20">
+                <window hSizePolicy="expanding">
+                <boxLayout direction="horizontal" >
+                <boxLayoutItem type="stretch" />
+                    <radioButton  id="dialogNewLogic.treewalker.linked" hSizePolicy="expanding" />
+                </boxLayout>
+                </window>
+            </gridLayoutItem>
+
+            <gridLayoutItem row="5"  column="1"  columnSpan="2" ><label value="" textAlignment="left|vCenter" vSizePolicy="fixed" borderStyle="" fixedHeight="12" /></gridLayoutItem>
+
+            <gridLayoutItem row="6"  column="1"  columnSpan="1" ><label id="dialogNewLogic.treewalker.dynamic.label" value="Traverse locatioon dynamic" textAlignment="left|vCenter" vSizePolicy="fixed" borderStyle="" fixedHeight="20" /></gridLayoutItem>
+            <gridLayoutItem row="6"  column="2"  columnSpan="20">
+                <window hSizePolicy="expanding">
+                <boxLayout direction="horizontal" >
+                <boxLayoutItem type="stretch" />
+                    <radioButton state="true" id="dialogNewLogic.treewalker.dynamic" hSizePolicy="expanding" />
+                </boxLayout>
+                </window>
+            </gridLayoutItem>
+            <gridLayoutItem row="7"  column="1"  columnSpan="1" ><label id="dialogNewLogic.treewalker.root.label" value="Traverse location root" textAlignment="left|vCenter" vSizePolicy="fixed" borderStyle="" fixedHeight="20" /></gridLayoutItem>
+            <gridLayoutItem row="7"  column="2"  columnSpan="20">
+                <window hSizePolicy="expanding">
+                <boxLayout direction="horizontal" >
+                <boxLayoutItem type="stretch" />
+                    <radioButton  id="dialogNewLogic.treewalker.root" hSizePolicy="expanding" />
+                </boxLayout>
+                </window>
+            </gridLayoutItem>
+
+    </gridLayout>
+
+    <buttonGroup>
+        <buttonGroupItem id="dialogNewLogic.treewalker.none"/>
+        <buttonGroupItem id="dialogNewLogic.treewalker"/>
+        <buttonGroupItem id="dialogNewLogic.treewalker.linked"/>
+    </buttonGroup>
+    <buttonGroup>
+        <buttonGroupItem id="dialogNewLogic.treewalker.dynamic"/>
+        <buttonGroupItem id="dialogNewLogic.treewalker.root"/>
+    </buttonGroup>
+
+    </groupContainer>
+    </boxLayout >
+
+    <include file="dialogNewLogic.lua" />
+</template>

@@ -1,0 +1,8 @@
+<template>
+    <window id="scmView">
+        <boxLayout>
+            <label  id="scmView.content" fixedHeight="27" text="scm"/>
+        </boxLayout>
+    </window>
+    <include file="scmView.lua"/>
+</template>

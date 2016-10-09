@@ -1,0 +1,3 @@
+<template>
+	<label id="control.label"  text="" />	
+</template>

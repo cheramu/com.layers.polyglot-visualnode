@@ -1,0 +1,282 @@
+<resources>
+
+    <icon id="polyglot-dialogueIcon">
+        <pixmap mode="normal"       state="off"   file="moduleIcon_16_normal.png" />
+        <pixmap mode="normal"       state="on"    file="moduleIcon_16_hilighted.png" />
+        <pixmap mode="selected"     state="off"   file="moduleIcon_16_hilighted.png" />
+        <pixmap mode="selected"     state="on"    file="moduleIcon_16_hilighted.png" />
+        <pixmap mode="active"       state="off"   file="moduleIcon_16_normal.png" />
+        <pixmap mode="active"       state="on"    file="moduleIcon_16_hilighted.png" />
+        <pixmap mode="disabled"     state="off"   file="moduleIcon_16_normal.png" />
+        <pixmap mode="disabled"     state="on"    file="moduleIcon_16_normal.png" />
+
+        <pixmap mode="normal"       state="off"   file="moduleIcon_32_normal.png" />
+        <pixmap mode="normal"       state="on"    file="moduleIcon_32_hilighted.png" />
+        <pixmap mode="selected"     state="off"   file="moduleIcon_32_hilighted.png" />
+        <pixmap mode="selected"     state="on"    file="moduleIcon_32_hilighted.png" />
+        <pixmap mode="active"       state="off"   file="moduleIcon_32_normal.png" />
+        <pixmap mode="active"       state="on"    file="moduleIcon_32_hilighted.png" />
+        <pixmap mode="disabled"     state="off"   file="moduleIcon_32_normal.png" />
+        <pixmap mode="disabled"     state="on"    file="moduleIcon_32_normal.png" />
+
+        <pixmap mode="normal"       state="off"   file="moduleIcon_64_normal.png" />
+        <pixmap mode="normal"       state="on"    file="moduleIcon_64_hilighted.png" />
+        <pixmap mode="selected"     state="off"   file="moduleIcon_64_hilighted.png" />
+        <pixmap mode="selected"     state="on"    file="moduleIcon_64_hilighted.png" />
+        <pixmap mode="active"       state="off"   file="moduleIcon_64_normal.png" />
+        <pixmap mode="active"       state="on"    file="moduleIcon_64_hilighted.png" />
+        <pixmap mode="disabled"     state="off"   file="moduleIcon_64_normal.png" />
+        <pixmap mode="disabled"     state="on"    file="moduleIcon_64_normal.png" />
+    </icon>
+
+    <icon id="pd-icon.add.child">
+        <pixmap mode="normal"       state="off"   file="AddChild_16_normal.png" />
+        <pixmap mode="normal"       state="on"    file="AddChild_16_highlighted.png" />
+        <pixmap mode="selected"     state="off"   file="AddChild_16_highlighted.png" />
+        <pixmap mode="selected"     state="on"    file="AddChild_16_highlighted.png" />
+        <pixmap mode="active"       state="off"   file="AddChild_16_normal.png" />
+        <pixmap mode="active"       state="on"    file="AddChild_16_highlighted.png" />
+        <pixmap mode="disabled"     state="off"   file="AddChild_16_disabled.png" />
+        <pixmap mode="disabled"     state="on"    file="AddChild_16_disabled.png" />
+    </icon>
+
+    <icon id="pd-icon.add.sibling">
+        <pixmap mode="normal"       state="off"   file="AddSibling_16_normal.png" />
+        <pixmap mode="normal"       state="on"    file="AddSibling_16_highlighted.png" />
+        <pixmap mode="selected"     state="off"   file="AddSibling_16_highlighted.png" />
+        <pixmap mode="selected"     state="on"    file="AddSibling_16_highlighted.png" />
+        <pixmap mode="active"       state="off"   file="AddSibling_16_normal.png" />
+        <pixmap mode="active"       state="on"    file="AddSibling_16_highlighted.png" />
+        <pixmap mode="disabled"     state="off"   file="AddSibling_16_disabled.png" />
+        <pixmap mode="disabled"     state="on"    file="AddSibling_16_disabled.png" />
+    </icon>
+
+    <icon id="pd-icon.edit">
+        <pixmap mode="normal"       state="off"   file="edit_16_normal.png" />
+        <pixmap mode="normal"       state="on"    file="edit_16_highlighted.png" />
+        <pixmap mode="selected"     state="off"   file="edit_16_highlighted.png" />
+        <pixmap mode="selected"     state="on"    file="edit_16_highlighted.png" />
+        <pixmap mode="active"       state="off"   file="edit_16_normal.png" />
+        <pixmap mode="active"       state="on"    file="edit_16_highlighted.png" />
+        <pixmap mode="disabled"     state="off"   file="edit_16_disabled.png" />
+        <pixmap mode="disabled"     state="on"    file="edit_16_disabled.png" />
+    </icon>
+
+    <icon id="pd-icon.remove">
+        <pixmap mode="normal"       state="off"   file="remove_16_normal.png" />
+        <pixmap mode="normal"       state="on"    file="remove_16_highlighted.png" />
+        <pixmap mode="selected"     state="off"   file="remove_16_highlighted.png" />
+        <pixmap mode="selected"     state="on"    file="remove_16_highlighted.png" />
+        <pixmap mode="active"       state="off"   file="remove_16_normal.png" />
+        <pixmap mode="active"       state="on"    file="remove_16_highlighted.png" />
+        <pixmap mode="disabled"     state="off"   file="remove_16_disabled.png" />
+        <pixmap mode="disabled"     state="on"    file="remove_16_disabled.png" />
+    </icon>
+
+
+    <icon id="pd-icon.edit.linked">
+        <pixmap mode="normal"       state="off"   file="linked_16_normal.png" />
+        <pixmap mode="normal"       state="on"    file="linked_16_highlighted.png" />
+        <pixmap mode="selected"     state="off"   file="linked_16_highlighted.png" />
+        <pixmap mode="selected"     state="on"    file="linked_16_highlighted.png" />
+        <pixmap mode="active"       state="off"   file="linked_16_normal.png" />
+        <pixmap mode="active"       state="on"    file="linked_16_highlighted.png" />
+        <pixmap mode="disabled"     state="off"   file="linked_16_disabled.png" />
+        <pixmap mode="disabled"     state="on"    file="linked_16_disabled.png" />
+    </icon>
+
+    <icon id="pd-icon.view.detail.show">
+        <pixmap mode="normal"       state="off"   file="viewdetail_16_normal.png" />
+        <pixmap mode="normal"       state="on"    file="viewdetail_16_highlighted.png" />
+        <pixmap mode="selected"     state="off"   file="viewdetail_16_highlighted.png" />
+        <pixmap mode="selected"     state="on"    file="viewdetail_16_highlighted.png" />
+        <pixmap mode="active"       state="off"   file="viewdetail_16_normal.png" />
+        <pixmap mode="active"       state="on"    file="viewdet`ail_16_highlighted.png" />
+        <pixmap mode="disabled"     state="off"   file="viewdetail_16_disabled.png" />
+        <pixmap mode="disabled"     state="on"    file="viewdetail_16_disabled.png" />
+    </icon>
+
+    <icon id="pd-icon.view.detail.hide">
+        <pixmap mode="normal"       state="off"   file="viewdetail_off_16_normal.png" />
+        <pixmap mode="normal"       state="on"    file="viewdetail_off_16_highlighted.png" />
+        <pixmap mode="selected"     state="off"   file="viewdetail_off_16_highlighted.png" />
+        <pixmap mode="selected"     state="on"    file="viewdetail_off_16_highlighted.png" />
+        <pixmap mode="active"       state="off"   file="viewdetail_off_16_normal.png" />
+        <pixmap mode="active"       state="on"    file="viewdetail_off_16_highlighted.png" />
+        <pixmap mode="disabled"     state="off"   file="viewdetail_off_16_disabled.png" />
+        <pixmap mode="disabled"     state="on"    file="viewdetail_off_16_disabled.png" />
+    </icon>
+
+    <icon id="pd-icon.save">
+        <pixmap mode="normal"       state="off"   file="save_16_normal.png" />
+        <pixmap mode="normal"       state="on"    file="save_16_highlighted.png" />
+        <pixmap mode="selected"     state="off"   file="save_16_highlighted.png" />
+        <pixmap mode="selected"     state="on"    file="save_16_highlighted.png" />
+        <pixmap mode="active"       state="off"   file="save_16_normal.png" />
+        <pixmap mode="active"       state="on"    file="save_16_highlighted.png" />
+        <pixmap mode="disabled"     state="off"   file="save_16_disabled.png" />
+        <pixmap mode="disabled"     state="on"    file="save_16_disabled.png" />
+    </icon>
+
+    <icon id="pd-icon.node">
+        <pixmap mode="normal"       state="off"   file="node_16_normal.png" />
+        <pixmap mode="normal"       state="on"    file="node_16_highlighted.png" />
+        <pixmap mode="selected"     state="off"   file="node_16_highlighted.png" />
+        <pixmap mode="selected"     state="on"    file="node_16_highlighted.png" />
+        <pixmap mode="active"       state="off"   file="node_16_normal.png" />
+        <pixmap mode="active"       state="on"    file="node_16_highlighted.png" />
+        <pixmap mode="disabled"     state="off"   file="node_16_disabled.png" />
+        <pixmap mode="disabled"     state="on"    file="node_16_disabled.png" />
+    </icon>
+
+    <icon id="pd-icon.link">
+        <pixmap mode="normal"       state="off"   file="link_16_normal.png" />
+        <pixmap mode="normal"       state="on"    file="link_16_highlighted.png" />
+        <pixmap mode="selected"     state="off"   file="link_16_highlighted.png" />
+        <pixmap mode="selected"     state="on"    file="link_16_highlighted.png" />
+        <pixmap mode="active"       state="off"   file="link_16_normal.png" />
+        <pixmap mode="active"       state="on"    file="link_16_highlighted.png" />
+        <pixmap mode="disabled"     state="off"   file="link_16_disabled.png" />
+        <pixmap mode="disabled"     state="on"    file="link_16_disabled.png" />
+    </icon>
+
+    <icon id="pd-icon.node.design">
+        <pixmap mode="normal"       state="off"   file="node_16_normal.png" />
+        <pixmap mode="normal"       state="on"    file="node-d_16_highlighted.png" />
+        <pixmap mode="selected"     state="off"   file="node-d_16_highlighted.png" />
+        <pixmap mode="selected"     state="on"    file="node-d_16_highlighted.png" />
+        <pixmap mode="active"       state="off"   file="node_16_normal.png" />
+        <pixmap mode="active"       state="on"    file="node_16_highlighted.png" />
+        <pixmap mode="disabled"     state="off"   file="node_16_disabled.png" />
+        <pixmap mode="disabled"     state="on"    file="node_16_disabled.png" />
+    </icon>
+
+    <icon id="pd-icon.node.add">
+        <pixmap mode="normal"       state="off"   file="node_16_normal.png" />
+        <pixmap mode="normal"       state="on"    file="node-a_16_highlighted.png" />
+        <pixmap mode="selected"     state="off"   file="node-a_16_highlighted.png" />
+        <pixmap mode="selected"     state="on"    file="node-a_16_highlighted.png" />
+        <pixmap mode="active"       state="off"   file="node_16_normal.png" />
+        <pixmap mode="active"       state="on"    file="node_16_highlighted.png" />
+        <pixmap mode="disabled"     state="off"   file="node_16_disabled.png" />
+        <pixmap mode="disabled"     state="on"    file="node_16_disabled.png" />
+    </icon>
+
+    <icon id="pd-icon.node.edit">
+        <pixmap mode="normal"       state="off"   file="node_16_normal.png" />
+        <pixmap mode="normal"       state="on"    file="node-e_16_highlighted.png" />
+        <pixmap mode="selected"     state="off"   file="node-e_16_highlighted.png" />
+        <pixmap mode="selected"     state="on"    file="node-e_16_highlighted.png" />
+        <pixmap mode="active"       state="off"   file="node_16_normal.png" />
+        <pixmap mode="active"       state="on"    file="node_16_highlighted.png" />
+        <pixmap mode="disabled"     state="off"   file="node_16_disabled.png" />
+        <pixmap mode="disabled"     state="on"    file="node_16_disabled.png" />
+    </icon>
+
+
+    <icon id="pd-icon.export">
+        <pixmap mode="normal"       state="off"   file="export_16_normal.png" />
+        <pixmap mode="normal"       state="on"    file="export_16_highlighted.png" />
+        <pixmap mode="selected"     state="off"   file="export_16_highlighted.png" />
+        <pixmap mode="selected"     state="on"    file="export_16_highlighted.png" />
+        <pixmap mode="active"       state="off"   file="export_normal.png" />
+        <pixmap mode="active"       state="on"    file="export_16_highlighted.png" />
+        <pixmap mode="disabled"     state="off"   file="export_16_disabled.png" />
+        <pixmap mode="disabled"     state="on"    file="export_16_disabled.png" />
+    </icon>
+
+
+    <icon id="pd-icon.logic">
+        <pixmap mode="normal"       state="off"   file="logic_16_normal.png" />
+        <pixmap mode="normal"       state="on"    file="logic_16_highlighted.png" />
+        <pixmap mode="selected"     state="off"   file="logic_16_highlighted.png" />
+        <pixmap mode="selected"     state="on"    file="logic_16_highlighted.png" />
+        <pixmap mode="active"       state="off"   file="logic_normal.png" />
+        <pixmap mode="active"       state="on"    file="logic_16_highlighted.png" />
+        <pixmap mode="disabled"     state="off"   file="logic_16_disabled.png" />
+        <pixmap mode="disabled"     state="on"    file="logic_16_disabled.png" />
+    </icon>
+
+    <icon id="pd-icon.build">
+        <pixmap mode="normal"       state="off"   file="build_16_normal.png" />
+        <pixmap mode="normal"       state="on"    file="build_16_highlighted.png" />
+        <pixmap mode="selected"     state="off"   file="build_16_highlighted.png" />
+        <pixmap mode="selected"     state="on"    file="build_16_highlighted.png" />
+        <pixmap mode="active"       state="off"   file="build_normal.png" />
+        <pixmap mode="active"       state="on"    file="build_16_highlighted.png" />
+        <pixmap mode="disabled"     state="off"   file="build_16_disabled.png" />
+        <pixmap mode="disabled"     state="on"    file="build_16_disabled.png" />
+    </icon>
+
+    <icon id="pd-icon.utility">
+        <pixmap mode="normal"       state="off"   file="utility_16_normal.png" />
+        <pixmap mode="normal"       state="on"    file="utility_16_highlighted.png" />
+        <pixmap mode="selected"     state="off"   file="utility_16_highlighted.png" />
+        <pixmap mode="selected"     state="on"    file="utility_16_highlighted.png" />
+        <pixmap mode="active"       state="off"   file="utility_normal.png" />
+        <pixmap mode="active"       state="on"    file="utility_16_highlighted.png" />
+        <pixmap mode="disabled"     state="off"   file="utility_16_disabled.png" />
+        <pixmap mode="disabled"     state="on"    file="utility_16_disabled.png" />
+    </icon>
+
+    <icon id="pd-icon.preview">
+        <pixmap mode="normal"       state="off"   file="preview_16_normal.png" />
+        <pixmap mode="normal"       state="on"    file="preview_16_highlighted.png" />
+        <pixmap mode="selected"     state="off"   file="preview_16_highlighted.png" />
+        <pixmap mode="selected"     state="on"    file="preview_16_highlighted.png" />
+        <pixmap mode="active"       state="off"   file="preview_normal.png" />
+        <pixmap mode="active"       state="on"    file="preview_16_highlighted.png" />
+        <pixmap mode="disabled"     state="off"   file="preview_16_disabled.png" />
+        <pixmap mode="disabled"     state="on"    file="preview_16_disabled.png" />
+    </icon>
+
+    <icon id="pd-icon.design">
+        <pixmap mode="normal"       state="off"   file="design_16_normal.png" />
+        <pixmap mode="normal"       state="on"    file="design_16_highlighted.png" />
+        <pixmap mode="selected"     state="off"   file="design_16_highlighted.png" />
+        <pixmap mode="selected"     state="on"    file="design_16_highlighted.png" />
+        <pixmap mode="active"       state="off"   file="design_normal.png" />
+        <pixmap mode="active"       state="on"    file="design_16_highlighted.png" />
+        <pixmap mode="disabled"     state="off"   file="design_16_disabled.png" />
+        <pixmap mode="disabled"     state="on"    file="design_16_disabled.png" />
+    </icon>
+
+    <icon id="pd-icon.view">
+        <pixmap mode="normal"       state="off"   file="view_16_normal.png" />
+        <pixmap mode="normal"       state="on"    file="view_16_highlighted.png" />
+        <pixmap mode="selected"     state="off"   file="view_16_highlighted.png" />
+        <pixmap mode="selected"     state="on"    file="view_16_highlighted.png" />
+        <pixmap mode="active"       state="off"   file="view_normal.png" />
+        <pixmap mode="active"       state="on"    file="view_16_highlighted.png" />
+        <pixmap mode="disabled"     state="off"   file="view_16_disabled.png" />
+        <pixmap mode="disabled"     state="on"    file="view_16_disabled.png" />
+    </icon>
+
+    <icon id="pd-icon.openwith">
+        <pixmap mode="normal"       state="off"   file="openwith_16_normal.png" />
+        <pixmap mode="normal"       state="on"    file="openwith_16_highlighted.png" />
+        <pixmap mode="selected"     state="off"   file="openwith_16_highlighted.png" />
+        <pixmap mode="selected"     state="on"    file="openwith_16_highlighted.png" />
+        <pixmap mode="active"       state="off"   file="openwith_normal.png" />
+        <pixmap mode="active"       state="on"    file="openwith_16_highlighted.png" />
+        <pixmap mode="disabled"     state="off"   file="openwith_16_disabled.png" />
+        <pixmap mode="disabled"     state="on"    file="openwith_16_disabled.png" />
+    </icon>
+
+    <icon id="pd-icon.sep"       file="sep_16_normal.png" />
+
+    <icon id="Select"       file="Select_16.png" />
+    <icon id="Translate"    file="Translate_16.png" />
+    <icon id="Rotate"       file="Rotate_16.png" />
+    <icon id="Scale"        file="Scale_16.png" />
+
+    <icon id="api" file="api.png" />
+    <icon id="constant" file="constant.png" />
+    <icon id="folder" file="folder.png" />
+    <icon id="function" file="function.png" />
+    <icon id="page_white_text" file="page_white_text.png" />
+
+</resources>
+
+
+

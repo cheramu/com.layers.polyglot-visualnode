@@ -1,0 +1,33 @@
+<template>
+    <window id="translationView" backgroundColor="44,44,44" backgroundStyle="brush">
+        <boxLayout>
+            <!--  HEADER  -->
+            <window vSizePolicy="fixed" borderStyle="" fixedHeight="3" backgroundStyle="plain" brushId="Toolbar"/>
+
+            <window vSizePolicy="fixed" backgroundColor="44,44,44" borderStyle="plain|top|bottom" fixedHeight="19" backgroundStyle="plain" >
+            <boxLayout direction="horizontal" spacing="0">
+                <label id="translationView.label.text" textAlignment="center" text=""/>
+            </boxLayout>
+            </window>
+
+            <window  borderStyle="bottom|raised" hSizePolicy="expanding" vSizePolicy="fixed" fixedHeight="26"  >
+            <boxLayout direction="horizontal" spacing="0">
+                <window>
+                    <boxLayout direction="horizontal" spacing="0">
+                        <pushButton   id="translationView.button.info"         icon="PropertyView"      tooltip="Add"    hSizePolicy="fixed" fixedWidth="26" vSizePolicy="fixed" fixedHeight="20" />
+                        <boxLayoutItem  type="stretch"/>
+                        <instantiate id="section.environment.fastfilter" library="com.shiva.editor.common.lib" template="FastFilter" />
+                    </boxLayout>
+                </window>
+            </boxLayout>
+            </window>
+
+         <!-- CONTENT -->
+            <tree id="translationView.content"  iconSize="16" indentation="18" sort="true" filter="true" headers="true" marginTop="2" marginLeft="1" marginBottom="1" marginRight="1"  borderStyle="left|bottom|right|raised" hSizePolicy="expanding" vSizePolicy="expanding" fixedRowHeight="20">
+                <column  position="1"  headerText="field"        fixedSize="120" fileDisplay="fullname" />
+                <column  position="2"  headerText="value"       fixedSize="120"  fileDisplay="size" />
+            </tree>
+        </boxLayout>
+    </window>
+    <include file="translationView.lua"/>
+</template>

@@ -1,0 +1,36 @@
+<template>
+    <moduleView id = "PropertyView" backgroundStyle="plain" backgroundColor="56,56,56">
+        <boxLayout direction="vertical" spacing="0">
+            <!--  HEADER  -->
+            <window id="Header" borderStyle="bottom|plain">
+            <boxLayout direction="horizontal" spacing="0">
+                <label minimumWidth="8" text=""/>
+                <label    value="" textAlignment="left|vCenter" vSizePolicy="fixed" borderStyle="" fixedHeight="26" />
+                <boxLayoutItem  type="stretch"/>
+                <picture  icon="polyglot-dialogueIcon" pictureSize="64" id="preview" hSizePolicy="fixed" vSizePolicy="fixed" fixedWidth="16" fixedHeight="16" />
+                <label text=""/>
+            </boxLayout>
+            </window>
+            <window vSizePolicy="fixed" borderStyle="" fixedHeight="6" backgroundStyle="plain" brushId="Toolbar"/>
+
+            <stackContainer id="root">
+                <instantiate id="loading" library="com.shiva.editor.common.lib" template="InnerDialogLoading" />
+
+                <window  id="content" borderStyle="none">
+                    <boxLayout direction="vertical" spacing="0">
+                        <tabContainer  id="PropertyView.Tab" vSizePolicy="expanding" hSizePolicy="expanding" />
+                    </boxLayout>
+                </window>
+
+            </stackContainer>
+        </boxLayout>
+
+        <!-- INCLUDES -->
+        <include file="propertyViewMenu.xml"/>
+        <include file="propertyView.lua"/>
+
+        <!-- CONNECTS -->
+        <connect sender="PropertyView"              event="kEventModuleViewInitialized" handler="onPropertyViewInit"        />
+        <connect sender="PropertyView"              event="kEventModuleViewDestroyed"   handler="onPropertyViewDestroy"     />
+    </moduleView>
+</template>

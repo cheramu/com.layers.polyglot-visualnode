@@ -1,0 +1,45 @@
+<!-- Generated support max 7 submenu with 7 fav items from logic tree, should add to menu fav in tree node as option -->
+<menuItem id="mainViewFileContextMenuSelection.logic.0.0" icon="pd-icon.logic"    text="Logic"  type="subMenu" >
+<menu id="mainViewFileContextMenuSelection.logic.popup"  type="popUp" orientation="vertical" >
+
+    <menuItem id="mainViewFileContextMenuSelection.logic.run" text="Run" icon="pd-icon.build" />
+    <menuItem id="mainViewFileContextMenuSelection.logic.preview" text="Preview" icon="pd-icon.preview" />
+    <menuItem id="mainViewFileContextMenuSelection.logic.separator" type="separator"/>
+
+    <menuItem id="mainViewFileContextMenuSelection.logic.1.0"  icon=""  text="1"  type="subMenu" >
+        <menu id="mainViewFileContextMenuSelection.logic.1.0.menu"  type="popUp" orientation="vertical" >
+        </menu>
+    </menuItem>
+
+    <menuItem id="mainViewFileContextMenuSelection.logic.2.0"  icon=""  text="2"  type="subMenu" >
+        <menu id="mainViewFileContextMenuSelection.logic.2.0.menu"  type="popUp" orientation="vertical" >
+        </menu>
+    </menuItem>
+
+    <menuItem id="mainViewFileContextMenuSelection.logic.3.0" icon=""  text="3"  type="subMenu" >
+        <menu id="mainViewFileContextMenuSelection.logic.3.0.menu"  type="popUp" orientation="vertical" >
+        </menu>
+    </menuItem>
+
+    <menuItem id="mainViewFileContextMenuSelection.logic.4.0"  icon=""  text="4"  type="subMenu" >
+        <menu id="mainViewFileContextMenuSelection.logic.4.0.menu"  type="popUp" orientation="vertical" >
+        </menu>
+    </menuItem>
+
+    <menuItem id="mainViewFileContextMenuSelection.logic.5.0"  icon=""  text="5"  type="subMenu" >
+        <menu id="mainViewFileContextMenuSelection.logic.5.0.menu"  type="popUp" orientation="vertical" >
+        </menu>
+    </menuItem>
+
+    <menuItem id="mainViewFileContextMenuSelection.logic.6.0"  icon=""  text="6"  type="subMenu" >
+        <menu id="mainViewFileContextMenuSelection.logic.6.0.menu"  type="popUp" orientation="vertical" >
+        </menu>
+    </menuItem>
+
+    <menuItem id="mainViewFileContextMenuSelection.logic.7.0"  icon=""  text="7"  type="subMenu" >
+        <menu id="mainViewFileContextMenuSelection.logic.7.0.menu"  type="popUp" orientation="vertical" >
+        </menu>
+    </menuItem>
+</menu>
+
+</menuItem>

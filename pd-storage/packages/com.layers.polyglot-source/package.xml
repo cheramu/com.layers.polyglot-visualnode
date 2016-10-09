@@ -1,0 +1,12 @@
+<module name="polyglot-source" icon=" " version="latest" >
+    <repository url=" " />
+    <description text="Adds a node based source editor" />
+    <author name="-" email="-" website="-" />
+
+    <supportedExtension value="" />
+
+    <include file="logic/api-shiva.lua" />
+    <include file="logic/apc-shiva.lua" />
+    <include file="logic/apm-shiva.lua" />
+
+</module>

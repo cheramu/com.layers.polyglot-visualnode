@@ -1,0 +1,39 @@
+node["editor.package"] =
+{
+["active"] =
+"false"
+,
+["author"] =
+"-"
+,
+["description"] =
+"Adds a node based source editor"
+,
+["email"] =
+"-"
+,
+["icon"] =
+" "
+,
+["id"] =
+"com.layers.polyglot-source"
+,
+["name"] =
+"polyglot-source"
+,
+["package-file"] =
+"package.xml"
+,
+["readme-file"] =
+"README.md"
+,
+["repository-url"] =
+" "
+,
+["version"] =
+"latest"
+,
+["website"] =
+"-"
+,
+}

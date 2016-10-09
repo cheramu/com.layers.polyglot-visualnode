@@ -1,0 +1,15 @@
+node["editor.resource.file.traverse"] =
+{
+["location"] =
+"tw.root"
+,
+["name"] =
+"cleanup-node-noref-tree.lua"
+,
+["path"] =
+"logic/script/"
+,
+["type"] =
+"tw"
+,
+}

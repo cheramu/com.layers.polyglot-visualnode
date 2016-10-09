@@ -1,0 +1,10 @@
+<module name="polyglot-desktop" icon=" " version="latest" >
+    <repository url=" " />
+    <description text="Adds a node dekstop to ShiVa" />
+    <author name="-" email="-" website="-" />
+
+    <supportedExtension value="" />
+
+    <include file="" />
+
+</module>

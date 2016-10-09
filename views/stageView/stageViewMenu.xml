@@ -1,0 +1,37 @@
+<moduleViewMenu>
+    
+    <menu id="mainMenu" type="anchored" hSizePolicy= "expanding" vSizePolicy= "preferred">    
+
+        <!-- FILE -->
+        <menuItem id="" text="File" type="subMenu" tooltip="" > 
+            <menu id="mainMenu.file" type="popUp" orientation="vertical" >           
+                <menuItem id="mainMenu.file.save"           text="Save"        icon="" tooltip=""  />
+            <!--<menuItem id="mainMenu.file.saveAs"         text="Save"        icon="" tooltip=""  />-->
+            <!--<menuItem type="separator"/>-->
+                <menuItem id="mainMenu.openWith"            text="Open with"   type="subMenu" tooltip="" > 
+                    <menu id="mainMenu.openWithMenu"        type="popUp"        orientation="vertical" />
+                </menuItem>
+                <menuItem type="separator"/>  
+                <menuItem id="mainMenu.file.close"          text="Close"    icon="" tooltip=""  />
+            </menu> 
+        </menuItem> 
+
+        <!-- EDIT -->
+        <menuItem id="" text="Edit" type="subMenu" tooltip="" > 
+            <menu id="mainMenu.edit" type="popUp" orientation="vertical" > 
+            
+                <menuItem id="mainMenu.edit.undo"           text="Undo"/>  
+                <menuItem id="mainMenu.edit.redo"           text="Redo"/>
+            </menu> 
+        </menuItem>  
+
+    </menu>         
+
+    <!-- CONNECTS -->
+    <connect   sender="mainMenu.edit.undo"          event="kEventMenuActionTriggered"   handler="onViewUndo" />
+    <connect   sender="mainMenu.edit.redo"          event="kEventMenuActionTriggered"   handler="onViewRedo" />
+    <connect   sender="mainMenu.file.save"          event="kEventMenuActionTriggered"   handler="onViewSave" />  
+    <connect   sender="mainMenu.file.close"         event="kEventMenuActionTriggered"   handler="onViewClose" />  
+     
+</moduleViewMenu>
+

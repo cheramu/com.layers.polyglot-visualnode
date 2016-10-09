@@ -1,0 +1,84 @@
+<template>
+    <window id="rootView" backgroundColor="44,44,44" backgroundStyle="brush" >
+    <boxLayout>
+    <stackContainer  id="rootView.content.stack" >
+    <window id="rootView.content.main" backgroundColor="44,44,44" backgroundStyle="brush" >
+        <boxLayout>
+            <!--  HEADER  -->
+            <window vSizePolicy="fixed" borderStyle="" fixedHeight="3" backgroundStyle="plain" brushId="Toolbar"/>
+            <window vSizePolicy="fixed" backgroundColor="44,44,44" borderStyle="plain|top|bottom" fixedHeight="19" backgroundStyle="plain" >
+            <boxLayout direction="horizontal" spacing="0">
+                <label id="rootView.label.text" textAlignment="center" text=""/>
+            </boxLayout>
+            </window>
+
+            <!-- HEADER TOOLBAR  -->
+            <window  borderStyle="bottom|raised" hSizePolicy="expanding" vSizePolicy="fixed" fixedHeight="26"  >
+                <boxLayout direction="horizontal" spacing="0">
+                        <window>
+                            <boxLayout direction="horizontal" spacing="0">
+                                <!-- todo: for now autosaving after every action <pushButton   id="rootView.button.save"         icon="Save"      tooltip="Save"    hSizePolicy="fixed" fixedWidth="26" vSizePolicy="fixed" fixedHeight="20" /> -->
+                                <pushButton id="rootView.button.add.sibling" tooltip="Add sibling" icon="pd-icon.add.sibling" fixedWidth="32" fixedHeight="27" hSizePolicy="expanding" text=""/>
+                                <pushButton id="rootView.button.add.child" tooltip="Add child" icon="pd-icon.add.child"  fixedWidth="32"   fixedHeight="27" hSizePolicy="expanding" text=""/>
+
+                                <picture margins="0px" icon="pd-icon.sep" pictureSize="16" id="preview" vSizePolicy="fixed" hSizePolicy="fixed" fixedHeight="27"  fixedWidth="10"  />
+
+                                <pushButton   id="rootView.button.edit"        icon="pd-icon.edit"   tooltip="Rename" hSizePolicy="fixed" fixedWidth="26" vSizePolicy="fixed" fixedHeight="20" />
+
+                                <picture  icon="pd-icon.sep" pictureSize="16" id="preview" vSizePolicy="fixed" hSizePolicy="fixed" fixedHeight="27"  fixedWidth="10"  />
+
+                                <pushButton   id="rootView.button.remove"      icon="pd-icon.remove"   tooltip="Remove" hSizePolicy="fixed" fixedWidth="26" vSizePolicy="fixed" fixedHeight="20" />
+
+                                <!-- todo: autolinking mode not implemented <pushButton   id="rootView.button.edit.linked"        icon="pd-icon.edit.linked"   tooltip="Edit-mode" hSizePolicy="fixed" fixedWidth="26" vSizePolicy="fixed" fixedHeight="20" /> -->
+                                <boxLayoutItem  type="stretch"/>
+                                <instantiate id="rootView.fastfilter" library="com.shiva.editor.common.lib" template="FastFilter" />
+                            </boxLayout>
+                        </window>
+                </boxLayout>
+            </window>
+
+           <!-- TREE CONTENT  -->
+            <boxLayoutItem >
+                <tree id="rootView.tree" filter="true" showChildrenOfUnfilteredItems="false" vSizePolicy="expanding" hSizePolicy="expanding" expandsOnDoubleClick="true" contextMenu="true"  selectionMode="multipleSelection"  iconSize="16" indentation="18" sort="false"  fixedRowHeight="20" marginLeft="1" marginTop="3" marginBottom="1" marginRight="1" hSizePolicy="expanding" vSizePolicy="expanding" borderStyle="left|bottom|right|raised" />
+            </boxLayoutItem>
+        </boxLayout>
+
+        <!-- CONNECTS -->
+        <connect sender="rootView.button.add.child" event="kEventButtonClicked"                handler="onMainViewTreeContextMenuAddNodeChild" />
+        <connect sender="rootView.button.add.sibling" event="kEventButtonClicked"                handler="onMainViewTreeContextMenuAddNodeSibling" />
+        <connect sender="rootView.button.remove"      event="kEventButtonClicked"                handler="onMainViewTreeContextMenuDelete" />
+        <connect sender="rootView.button.edit"        event="kEventButtonClicked"                handler="onMainViewTreeContextMenuRenameNode" />
+
+
+        <connect sender="rootView.tree" event="kEventCustomContextMenuRequested" handler="onContextMenuRequestedRootView"/>
+        <connect sender="rootView.tree" event="kEventTreeItemItemSelectionChanged" handler="onEventTreeItemSelectionChanged" />
+        <connect sender="rootView.tree" event="kEventTreeItemClicked" handler="onEventTreeItemClicked" />
+
+        <connect sender="rootView.button.save" event="kEventButtonClicked" handler="onEventButtonClickedMainViewSave"/>
+
+        <connect sender="rootView.export" event="kEventButtonClicked" handler="onEventButtonClickedMainViewExport"/>
+
+        <connect sender="rootView.TabTop" event="kEventTabContainerTabCloseRequested" handler="onEventTabContainerTabCloseRequested"/>
+        <connect sender="rootView.TabTop" event="kEventTabContainerCurrentTabChanged" handler="onEventTabContainerCurrentTabChanged"/>
+
+        <connect handler="onRootViewFastFilterChanged" event="onFastFilterHasChanged ( hView, hComponent, sFilter )" sender="rootView.fastfilter"/>
+
+
+
+    </window>
+    </stackContainer>
+    </boxLayout>
+    </window>
+
+    <include file="rootView.lua"/>
+
+    <include file="rootViewTreeMenu.xml" />
+    <include file="rootViewTreeMenu.lua" />
+
+    <include file="rootViewTreeView.lua"/>
+    <include file="rootViewTreeLoadSave.lua"/>
+    <include file="rootViewTreeModify.lua"/>
+    <include file="rootViewTreeLink.lua"/>
+    <include file="rootViewTreeExec.lua"/>
+
+</template>

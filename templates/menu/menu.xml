@@ -1,0 +1,8 @@
+<template>
+    <menu id="control.menu" type="popUp" orientation="vertical" >
+    <menuItem id="control.menu.menuitem" icon="pd-icon.add.child"  text="TestSubMenu" type="subMenu" >
+        <menu id="control.menu.menuitem.submenu" type="popUp" orientation="vertical" >
+        </menu>
+    </menuItem>
+    </menu>
+</template>

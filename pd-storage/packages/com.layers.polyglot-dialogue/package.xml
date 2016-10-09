@@ -1,0 +1,25 @@
+<module name="polyglot-dialogue" icon=" " version="latest" >
+    <repository url=" " />
+    <description text="Adds a node based dialogue editor" />
+    <author name="-" email="-" website="-" />
+
+    <supportedExtension value="pds" />
+    <supportedExtension value="pdp" />
+
+
+    <include file="model/model.lua" />
+
+    <include file="logic/apm-dialogue.lua" />
+
+    <include file="logic/AI_DIALOGUE.lua" />
+
+    <include file="views/stageView/preview/previewStageHud.lua" />
+    <include file="views/stageView/preview/previewStageView.lua" />
+
+    <include file="views/stageView/screenplay/screenplayStageHud.lua" />
+    <include file="views/stageView/screenplay/screenplayStageScene.lua" />
+    <include file="views/stageView/screenplay/screenplayStageView.lua" />
+
+    <include file="views/translationView/translationView.xml" />
+
+</module>

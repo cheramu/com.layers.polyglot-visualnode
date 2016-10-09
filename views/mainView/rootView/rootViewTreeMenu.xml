@@ -1,0 +1,110 @@
+<menu id="mainViewFileContextMenuSelection" type="popUp" orientation="vertical" >
+
+    <!-- ADD NODES -->
+    <menuItem id="mainViewFileContextMenuSelection.addNode" icon="pd-icon.add.child" text="Add node..."               />
+    <menuItem id="mainViewFileContextMenuSelection.addNodeTypeGroup" icon="pd-icon.add.child"  text="Add node"          type="subMenu" >
+        <menu id="mainViewFileContextMenuSelection.addNodeType"      type="popUp"              orientation="vertical" >
+            <menuItem id="mainViewFileContextMenuSelection.node"        text="Node"          />
+        </menu>
+    </menuItem>
+
+    <menuItem type="separator"/>
+
+    <!-- LINK NODES MENU -->
+    <menuItem id="mainViewFileContextMenuSelection.linkNodeGroup"  icon="pd-icon.link"             text="Link node"          type="subMenu" >
+        <menu id="mainViewFileContextMenuSelection.linkNode"      type="popUp"              orientation="vertical" ></menu>
+    </menuItem>
+
+    <!-- EDIT NODES -->
+    <menuItem id="" icon="pd-icon.edit"   text="Edit"  type="subMenu" >
+        <menu id=""  type="popUp" orientation="vertical" >
+            <menuItem id="mainViewFileContextMenuSelection.renameNode"    icon="pd-icon.node.edit"   text="Rename..."          />
+            <menuItem type="separator"/>
+            <menuItem id="mainViewFileContextMenuSelection.copy"   icon="pd-icon.node.edit"   text="Copy"       />
+            <menuItem  id="mainViewFileContextMenuSelection.paste.sibling"  icon="pd-icon.node.edit" text="Paste (S)"      />
+             <menuItem  id="mainViewFileContextMenuSelection.paste.child"   icon="pd-icon.node.edit" text="Paste (C)"      />
+            <menuItem type="separator"/>
+            <menuItem id="mainViewFileContextMenuSelection.deleteNode"  icon="pd-icon.remove"  text="Remove" />
+        </menu>
+    </menuItem>
+
+    <menuItem type="separator"/>
+
+    <menuItem id=""    text="View"  type="subMenu" >
+        <menu id=""  type="popUp" orientation="vertical" >
+            <menuItem id="mainViewFileContextMenuSelection.collapseNode" text="Collapse"  />
+            <menuItem id="mainViewFileContextMenuSelection.collapseNode.all" text="Collapse all"  />
+            <menuItem type="separator"/>
+            <menuItem id="mainViewFileContextMenuSelection.expandNode"   text="Expand"   />
+            <menuItem id="mainViewFileContextMenuSelection.expandNode.all"   text="Expand all"      />
+        </menu>
+    </menuItem>
+
+    <menuItem type="separator"/>
+
+    <menuItem id="mainViewFileContextMenuSelection.openWithGroup" icon="pd-icon.openwith"    text="Open with"  type="subMenu" >
+        <menu id="mainViewFileContextMenuSelection.openWith"  type="popUp" orientation="vertical" >
+            <!-- <menuItem id="mainViewFileContextMenuSelection.open.editor"                text="Editor"          />
+            <menuItem type="separator"/> -->
+        </menu>
+    </menuItem>
+
+    <include file="rootViewTreeMenuDynamic.xml" />
+
+    <menuItem type="separator"/>
+
+    <menuItem id=""  icon="pd-icon.design"   text="Design"  type="subMenu" >
+        <menu id=""  type="popUp" orientation="vertical" >
+            <menuItem id="mainViewFileContextMenuSelection.newNode"   icon="pd-icon.node.design"           text="Node"          />
+            <menuItem id="mainViewFileContextMenuSelection.newFilter"  icon="pd-icon.node.design"   text="Filter"       />
+            <menuItem type="separator"/>
+            <menuItem id="mainViewFileContextMenuSelection.newExport" icon="pd-icon.node.design" text="Export" />
+            <menuItem id="mainViewFileContextMenuSelection.newScript" icon="pd-icon.node.design" text="Script" />
+        </menu>
+    </menuItem>
+
+    <!-- Packages -->
+    <menuItem id="mainViewFileContextMenuSelection.package"  icon=""   text="Package"  type="subMenu" >
+        <menu id="mainViewFileContextMenuSelection.package.popup"  type="popUp" orientation="vertical" >
+            <menuItem id="mainViewFileContextMenuSelection.package.activate" icon="" text="(De)-Activate" />
+            <menuItem id="mainViewFileContextMenuSelection.package.sep.1" type="separator"/>
+            <menuItem id="mainViewFileContextMenuSelection.package.install" icon="" text="(Re)-Install" />
+            <menuItem id="mainViewFileContextMenuSelection.package.sep.2" type="separator"/>
+            <menuItem id="mainViewFileContextMenuSelection.package.import" icon="" text="Import" />
+        </menu>
+    </menuItem>
+
+    <!-- --------------------------------------------- -->
+    <connect sender="mainViewFileContextMenuSelection.package.activate" event="kEventMenuActionTriggered" handler="mainViewFileContextMenuSelectionPackageAct" />
+    <connect sender="mainViewFileContextMenuSelection.package.install" event="kEventMenuActionTriggered" handler="mainViewFileContextMenuSelectionPackageInst" />
+    <connect sender="mainViewFileContextMenuSelection.package.import" event="kEventMenuActionTriggered" handler="mainViewFileContextMenuSelectionPackageImport" />
+
+    <connect sender="mainViewFileContextMenuSelection.newFilter" event="kEventMenuActionTriggered" handler="mainViewFileContextMenuSelectionNewFilter" />
+    <connect sender="mainViewFileContextMenuSelection.newExport" event="kEventMenuActionTriggered" handler="mainViewFileContextMenuSelectionNewExport" />
+    <connect sender="mainViewFileContextMenuSelection.newScript" event="kEventMenuActionTriggered" handler="mainViewFileContextMenuSelectionNewScript" />
+
+    <connect sender="mainViewFileContextMenuSelection.addNode"      event="kEventMenuActionTriggered" handler="onMainViewTreeContextMenuAddNodeChild"      />
+    <connect sender="mainViewFileContextMenuSelection.addNodeTypeGroup" event="kEventMenuActionTriggered" handler="onMainViewTreeContextMenuAddNodeDefType" />
+    <!--
+    <connect sender="mainViewFileContextMenuSelection.addNode"      event="kEventMenuActionTriggered" handler="onMainViewTreeContextMenuAddNode"      />
+    <connect sender="mainViewFileContextMenuSelection.addNodeTypeGroup" event="kEventMenuActionTriggered" handler="onMainViewTreeContextMenuAddNodeType" />
+    -->
+    <connect sender="mainViewFileContextMenuSelection.newNode"      event="kEventMenuActionTriggered" handler="onMainViewTreeContextMenuNewNode"      />
+    <connect sender="mainViewFileContextMenuSelection.renameNode"    event="kEventMenuActionTriggered" handler="onMainViewTreeContextMenuRenameNode"    />
+    <connect sender="mainViewFileContextMenuSelection.deleteNode"    event="kEventMenuActionTriggered" handler="onMainViewTreeContextMenuDelete"    />
+
+    <connect sender="mainViewFileContextMenuSelection.copy" event="kEventMenuActionTriggered" handler="onMainViewTreeContextMenuCopyNode" />
+    <connect sender="mainViewFileContextMenuSelection.paste.sibling" event="kEventMenuActionTriggered" handler="onMainViewTreeContextMenuPasteNodeSibling" />
+    <connect sender="mainViewFileContextMenuSelection.paste.child" event="kEventMenuActionTriggered" handler="onMainViewTreeContextMenuPasteNodeChild" />
+
+    <connect sender="mainViewFileContextMenuSelection.expandNode"    event="kEventMenuActionTriggered" handler="onMainViewTreeContextMenuExpandNode"    />
+    <connect sender="mainViewFileContextMenuSelection.collapseNode"    event="kEventMenuActionTriggered" handler="onMainViewTreeContextMenuCollapseNode"    />
+
+    <connect sender="mainViewFileContextMenuSelection.expandNode.all"    event="kEventMenuActionTriggered" handler="onMainViewTreeContextMenuExpandNodeAll"    />
+    <connect sender="mainViewFileContextMenuSelection.collapseNode.all"    event="kEventMenuActionTriggered" handler="onMainViewTreeContextMenuCollapseNodeAll"    />
+
+
+    <connect sender="mainViewFileContextMenuSelection.logic.run" event="kEventMenuActionTriggered" handler="onMainViewTreeContextMenuLogicRun" />
+    <connect sender="mainViewFileContextMenuSelection.logic.preview" event="kEventMenuActionTriggered" handler="onMainViewTreeContextMenuLogicPreview" />
+
+</menu>

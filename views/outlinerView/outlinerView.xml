@@ -1,0 +1,73 @@
+<template>
+    <moduleView id="OutlinerView" backgroundStyle="plain" backgroundColor="56,56,56">
+        <boxLayout direction="vertical" margins="0" spacing="0">
+
+            <!--  HEADER  -->
+            <window id="Header" borderStyle="bottom|plain">
+            <boxLayout direction="horizontal" spacing="0">
+                <label minimumWidth="8" text=""/>
+                <label    value="" textAlignment="left|vCenter" vSizePolicy="fixed" borderStyle="" fixedHeight="26" />
+                <boxLayoutItem  type="stretch"/>
+                <picture  icon="polyglot-dialogueIcon" pictureSize="64" id="preview" hSizePolicy="fixed" vSizePolicy="fixed" fixedWidth="16" fixedHeight="16" />
+                <label text=""/>
+            </boxLayout>
+            </window>
+            <window vSizePolicy="fixed" borderStyle="" fixedHeight="6" backgroundStyle="plain" brushId="Toolbar"/>
+
+
+            <!-- ROOT -->
+            <stackContainer id="root">
+                <instantiate id="loading" library="com.shiva.editor.common.lib" template="InnerDialogLoading" />
+
+                <window      id="content"  hSizePolicy="expanding" vSizePolicy="expanding" margins="0" borderStyle="none">
+                    <boxLayout direction="vertical" margins="0" spacing="0">
+
+                        <!-- TOOLBAR
+                        <window borderStyle="bottom|raised">
+                            <boxLayout direction="vertical" spacing="0">
+                                <boxLayoutItem type="spacing" size="2"/>
+                                <window hSizePolicy="expanding" vSizePolicy="fixed" fixedHeight="20" />
+                                <boxLayoutItem type="spacing" size="3"/>
+                            </boxLayout>
+                        </window> -->
+
+                        <!-- BODY -->
+                        <window backgroundStyle="plain" backgroundColor="44,44,44">
+                            <boxLayout direction="vertical" spacing="0">
+                                <tree id="outliner.tree" headers="true" >
+                                    <column headerText="Name" />
+                                    <column headerText="Type" />
+                                </tree>
+                                <!--
+                                <boxLayoutItem type="stretch" />
+                                <label value="Outliner view body" textAlignment="center|vCenter" vSizePolicy="fixed" borderStyle="" fixedHeight="20"/>
+                                <boxLayoutItem type="stretch" />
+                                -->
+                            </boxLayout>
+                        </window>
+
+                        <!-- STATUS BAR -->
+                        <window borderStyle="top|raised">
+                            <boxLayout direction="vertical" spacing="0">
+                                <window hSizePolicy="expanding" vSizePolicy="fixed" fixedHeight="20" />
+                            </boxLayout>
+                        </window>
+
+                    </boxLayout>
+                </window>
+
+            </stackContainer>
+        </boxLayout>
+
+        <!-- INCLUDES -->
+        <include  file="outlinerView.lua" />
+        <include  file="outlinerViewMenu.xml" />
+
+        <!-- CONNECTS -->
+        <connect   sender="OutlinerView" event="kEventModuleViewInitialized" handler="onOutlinerViewInit" />
+        <connect   sender="OutlinerView" event="kEventModuleViewDestroyed"   handler="onOutlinerViewDestroy" />
+
+    </moduleView>
+</template>
+
+

@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE shiva.editor.settings>
+<settings id="P-Node" version="1.0">
+    <section id="Content" options="hidden">
+        <key id="Maximised Pane" value=""/>
+        <section id="Pane[0]" options="hidden">
+            <section id="Content" options="hidden">
+                <key id="Type" value="Empty"/>
+            </section>
+            <key id="PaneUID" value="pane[0]"/>
+            <section id="RecentUser[0]" options="hidden">
+                <section id="Content" options="hidden">
+                    <key id="Type" value="Empty"/>
+                </section>
+            </section>
+            <section id="RecentUser[1]" options="hidden">
+                <section id="Content" options="hidden">
+                    <key id="Type" value="Empty"/>
+                </section>
+            </section>
+            <section id="RecentUser[2]" options="hidden">
+                <section id="Content" options="hidden">
+                    <key id="Type" value="Empty"/>
+                </section>
+            </section>
+            <section id="RecentUser[3]" options="hidden">
+                <section id="Content" options="hidden">
+                    <key id="Type" value="Empty"/>
+                </section>
+            </section>
+        </section>
+        <section id="Pane[1]" options="hidden">
+            <section id="Content" options="hidden">
+                <key id="Identifier" value="Stage"/>
+                <key id="Type" value="Inspector"/>
+            </section>
+            <key id="PaneUID" value="pane[1]"/>
+            <section id="RecentUser[0]" options="hidden">
+                <section id="Content" options="hidden">
+                    <key id="Identifier" value="Stage"/>
+                    <key id="Type" value="Inspector"/>
+                </section>
+            </section>
+            <section id="RecentUser[1]" options="hidden">
+                <section id="Content" options="hidden">
+                    <key id="Type" value="Empty"/>
+                </section>
+            </section>
+            <section id="RecentUser[2]" options="hidden">
+                <section id="Content" options="hidden">
+                    <key id="Type" value="Empty"/>
+                </section>
+            </section>
+            <section id="RecentUser[3]" options="hidden">
+                <section id="Content" options="hidden">
+                    <key id="Type" value="Empty"/>
+                </section>
+            </section>
+        </section>
+        <section id="Pane[2]" options="hidden">
+            <section id="Content" options="hidden">
+                <key id="Identifier" value="Node Properties"/>
+                <key id="Type" value="Inspector"/>
+            </section>
+            <key id="PaneUID" value="pane[2]"/>
+            <section id="RecentUser[0]" options="hidden">
+                <section id="Content" options="hidden">
+                    <key id="Identifier" value="com.shiva.editor.module"/>
+                    <key id="Type" value="Module"/>
+                </section>
+            </section>
+            <section id="RecentUser[1]" options="hidden">
+                <section id="Content" options="hidden">
+                    <key id="Identifier" value="com.shiva.editor.console"/>
+                    <key id="Type" value="Module"/>
+                </section>
+            </section>
+            <section id="RecentUser[2]" options="hidden">
+                <section id="Content" options="hidden">
+                    <key id="Identifier" value="com.shiva.editor.log"/>
+                    <key id="Type" value="Module"/>
+                </section>
+            </section>
+            <section id="RecentUser[3]" options="hidden">
+                <section id="Content" options="hidden">
+                    <key id="Identifier" value="Node Properties"/>
+                    <key id="Type" value="Inspector"/>
+                </section>
+            </section>
+        </section>
+        <section id="Pane[3]" options="hidden">
+            <section id="Content" options="hidden">
+                <key id="Identifier" value="com.shiva.editor.log"/>
+                <key id="Type" value="Module"/>
+            </section>
+            <key id="PaneUID" value="pane[3]"/>
+            <section id="RecentUser[0]" options="hidden">
+                <section id="Content" options="hidden">
+                    <key id="Identifier" value="Properties"/>
+                    <key id="Type" value="Inspector"/>
+                </section>
+            </section>
+            <section id="RecentUser[1]" options="hidden">
+                <section id="Content" options="hidden">
+                    <key id="Identifier" value="Outliner"/>
+                    <key id="Type" value="Inspector"/>
+                </section>
+            </section>
+            <section id="RecentUser[2]" options="hidden">
+                <section id="Content" options="hidden">
+                    <key id="Identifier" value="com.shiva.editor.log"/>
+                    <key id="Type" value="Module"/>
+                </section>
+            </section>
+            <section id="RecentUser[3]" options="hidden">
+                <section id="Content" options="hidden">
+                    <key id="Type" value="Empty"/>
+                </section>
+            </section>
+        </section>
+        <section id="Pane[4]" options="hidden">
+            <section id="Content" options="hidden">
+                <key id="Identifier" value="com.layers.polyglot-visualnode"/>
+                <key id="Type" value="Module"/>
+            </section>
+            <key id="PaneUID" value="pane[4]"/>
+            <section id="RecentUser[0]" options="hidden">
+                <section id="Content" options="hidden">
+                    <key id="Type" value="Empty"/>
+                </section>
+            </section>
+            <section id="RecentUser[1]" options="hidden">
+                <section id="Content" options="hidden">
+                    <key id="Type" value="Empty"/>
+                </section>
+            </section>
+            <section id="RecentUser[2]" options="hidden">
+                <section id="Content" options="hidden">
+                    <key id="Type" value="Empty"/>
+                </section>
+            </section>
+            <section id="RecentUser[3]" options="hidden">
+                <section id="Content" options="hidden">
+                    <key id="Type" value="Empty"/>
+                </section>
+            </section>
+        </section>
+        <key id="Panes Count" value="5"/>
+    </section>
+    <section id="Layout" options="hidden">
+        <key id="Child Count" value="1"/>
+        <section id="Node[0]" options="hidden">
+            <key id="Child Count" value="2"/>
+            <key id="Docked" value="true"/>
+            <section id="Node[0]" options="hidden">
+                <key id="Child Count" value="2"/>
+                <key id="Docked" value="true"/>
+                <section id="Node[0]" options="hidden">
+                    <key id="Child Count" value="0"/>
+                    <key id="Docked" value="true"/>
+                    <key id="Orientation" value="2"/>
+                    <key id="Proportion" value="0.5"/>
+                    <key id="WidgetId" value="pane[0]"/>
+                </section>
+                <section id="Node[1]" options="hidden">
+                    <key id="Child Count" value="2"/>
+                    <key id="Docked" value="true"/>
+                    <section id="Node[0]" options="hidden">
+                        <key id="Child Count" value="0"/>
+                        <key id="Docked" value="true"/>
+                        <key id="Orientation" value="2"/>
+                        <key id="Proportion" value="0.5"/>
+                        <key id="WidgetId" value="pane[4]"/>
+                    </section>
+                    <section id="Node[1]" options="hidden">
+                        <key id="Child Count" value="0"/>
+                        <key id="Docked" value="true"/>
+                        <key id="Orientation" value="2"/>
+                        <key id="Proportion" value="0.5"/>
+                        <key id="WidgetId" value="pane[1]"/>
+                    </section>
+                    <key id="Orientation" value="1"/>
+                    <key id="Proportion" value="0.252162337"/>
+                    <key id="WidgetId" value=""/>
+                </section>
+                <key id="Orientation" value="1"/>
+                <key id="Proportion" value="0"/>
+                <key id="WidgetId" value=""/>
+            </section>
+            <section id="Node[1]" options="hidden">
+                <key id="Child Count" value="2"/>
+                <key id="Docked" value="true"/>
+                <section id="Node[0]" options="hidden">
+                    <key id="Child Count" value="0"/>
+                    <key id="Docked" value="true"/>
+                    <key id="Orientation" value="2"/>
+                    <key id="Proportion" value="0.5"/>
+                    <key id="WidgetId" value="pane[2]"/>
+                </section>
+                <section id="Node[1]" options="hidden">
+                    <key id="Child Count" value="0"/>
+                    <key id="Docked" value="true"/>
+                    <key id="Orientation" value="2"/>
+                    <key id="Proportion" value="0.5"/>
+                    <key id="WidgetId" value="pane[3]"/>
+                </section>
+                <key id="Orientation" value="2"/>
+                <key id="Proportion" value="0.594978154"/>
+                <key id="WidgetId" value=""/>
+            </section>
+            <key id="Orientation" value="1"/>
+            <key id="Proportion" value="0.782812476"/>
+            <key id="WidgetId" value=""/>
+        </section>
+    </section>
+    <key id="Name" value="P-Node"/>
+    <key id="Order" value="3"/>
+</settings>

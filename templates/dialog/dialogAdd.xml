@@ -1,0 +1,9 @@
+<template>
+    <gridLayout  id="dialogAdd"   marginTop="15" marginBottom="15" horizontalSpacing="5" verticalSpacing="5" columnMinimumWidth="1:70"  >
+        <gridLayoutItem row="1"  column="1"  columnSpan="1"  ><label id="dialogAdd.dialogtype.label" value="Node type:"   borderStyle="" fixedHeight="20" /></gridLayoutItem>
+        <gridLayoutItem row="1"  column="2"  columnSpan="40" ><comboBox id="dialogAdd.dialogtype"  hSizePolicy="expanding"  /></gridLayoutItem>
+        <gridLayoutItem row="2"  column="1"  columnSpan="1" ><label  id="dialogAdd.name.new.label" value="Namespace:" borderStyle="" fixedHeight="20" /></gridLayoutItem>
+        <gridLayoutItem row="2"  column="2"   columnSpan="40" ><editBox   id="dialogAdd.name.new" hSizePolicy="expanding" /></gridLayoutItem>
+    </gridLayout>
+     <include file="dialogAdd.lua" />
+</template>

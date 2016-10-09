@@ -1,0 +1,23 @@
+<library id="lib">
+
+    <include file="dialog-template.xml" />
+
+    <include file="dialogAdd.xml" />
+    <include file="dialogAdd.lua" />
+
+    <include file="dialogAddTxt.xml" />
+    <include file="dialogAddTxt.lua" />
+
+    <include file="dialogRename.xml" />
+    <include file="dialogRename.lua" />
+
+    <include file="dialogNew.xml" />
+    <include file="dialogNew.lua" />
+
+    <include file="dialogNewLogic.xml" />
+    <include file="dialogNewLogic.lua" />
+
+    <include file="dialogNewFilter.xml" />
+    <include file="dialogNewFilter.lua" />
+
+</library>

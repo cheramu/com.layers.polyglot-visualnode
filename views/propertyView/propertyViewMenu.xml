@@ -1,0 +1,42 @@
+<moduleViewMenu>
+
+    <menu id="propertyViewMenu" type="anchored" hSizePolicy= "expanding" vSizePolicy= "preferred">
+
+        <!-- FILE -->
+        <menuItem id="" text="File" type="subMenu" tooltip="" >
+            <menu id="propertyViewMenu.file" type="popUp" orientation="vertical" >
+                <menuItem id="propertyViewMenu.file.save" text="Save" icon="Save" > <shortcut id="save" value="@Save" /> </menuItem>
+                
+                <menuItem type="separator"/>
+                <menuItem id="propertyViewMenu.file.settings"  text="Settings..." />
+                
+                <menuItem type="separator"/>
+                <menuItem id="propertyViewMenu.file.close" text="Close" > <shortcut id="close" value="@Close" /> </menuItem>
+            </menu>
+        </menuItem>
+
+         <!-- EDIT -->
+        <menuItem text="Edit" type="subMenu" >
+            <menu id="propertyViewMenu.edit" type="popUp" orientation="vertical" >
+                <menuItem id="propertyViewMenu.edit.undo"       text="Undo" >               <shortcut value="@Undo" /> </menuItem>
+                <menuItem id="propertyViewMenu.edit.redo"       text="Redo" >               <shortcut value="@Redo" /> </menuItem>
+            </menu>
+        </menuItem>
+
+    </menu>
+
+    <include file="propertyViewMenu.lua"/>
+
+    <!-- CONNECTS -->
+    <connect sender="propertyViewMenu.file"          event="kEventMenuWillPopUp"       handler="onPropertyViewUpdateMenuFile"   />
+    <connect sender="propertyViewMenu.edit"          event="kEventMenuWillPopUp"       handler="onPropertyViewUpdateMenuEdit"   />
+
+    <connect sender="propertyViewMenu.file.save"     event="kEventMenuActionTriggered" handler="onPropertyViewMenuFileSave"     />
+    <connect sender="propertyViewMenu.file.settings" event="kEventMenuActionTriggered" handler="onPropertyViewMenuFileSettings" />
+    <connect sender="propertyViewMenu.file.close"    event="kEventMenuActionTriggered" handler="onPropertyViewMenuFileClose"    />
+
+    <connect sender="propertyViewMenu.edit.undo"     event="kEventMenuActionTriggered" handler="onPropertyViewMenuEditUndo"     />
+    <connect sender="propertyViewMenu.edit.redo"     event="kEventMenuActionTriggered" handler="onPropertyViewMenuEditRedo"     />
+
+</moduleViewMenu>
+

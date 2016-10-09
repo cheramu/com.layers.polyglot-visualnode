@@ -1,0 +1,49 @@
+<module name="Node Explorer"  icon="polyglot-dialogueIcon" >
+
+    <!-- INFO -->
+    <author name="cheramu" email="" website="" />
+    <description text="polyglot-visualnode"/>
+
+    <!-- polyglot visual node -->
+    <supportedExtension value="node" />
+    <supportedExtension value="pdg" />
+    <supportedExtension value="pvn"  />
+    <!-- <supportedExtension value="clp" /> -->
+
+    <!-- COMMON -->
+    <depend  module="com.shiva.editor.common" />
+    <include file="/com.shiva.editor.common/guiexAPI.xml"/>
+
+    <include file="views/view.lua" />
+    <include file="logic/traverse.lua" />
+    <include file="logic/nodehandler.lua" />
+    <include file="logic/package.lua" />
+    <include file="model/model.lua" />
+
+    <library id="lib">
+        <include file="templates/dialog/dialog.xml" />
+        <include file="templates/textbox/textbox.xml" />
+        <include file="templates/label/label.xml" />
+        <include file="templates/editbox/editbox.xml" />
+        <include file="templates/checkbox/checkbox.xml" />
+        <include file="templates/menu/menu.xml" />
+
+        <include file="views/nodeView/datamodelView/datamodelView.xml" />
+        <include file="views/nodeView/modifydataView/modifydataView.xml" />
+        <include file="views/nodeView/nodeinfoView/nodeView.xml" />
+
+        <include file="views/mainView/rootView/rootView.xml" />
+        <include file="views/mainView/leafView/leafView.xml" />
+    </library>
+
+
+    <!-- INCLUDES -->
+    <include file="resources/resources.xml"/>
+
+    <include file="settingsPanel/settingsPanel.xml"/>
+    <include file="views/views.xml" />
+    <include file="views/mainView/mainView.xml" />
+
+    <include file="pd-storage/packages/packages.xml"/>
+
+</module>

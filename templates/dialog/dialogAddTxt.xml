@@ -1,0 +1,12 @@
+<template>
+    <gridLayout  id="dialogAddTxt"  marginTop="15" marginBottom="15" horizontalSpacing="5" verticalSpacing="5" columnMinimumWidth="1:70">
+
+        <gridLayoutItem row="1"  column="1"  columnSpan="1" ><label id="dialogAddTxt.dialogtype.label" value="field:" textAlignment="left|vCenter" vSizePolicy="fixed" borderStyle="" fixedHeight="20" /></gridLayoutItem>
+        <gridLayoutItem row="1"  column="2"  columnSpan="20"><editBox placeHolderText="field"  id="dialogAddTxt.dialogtype" hSizePolicy="expanding" /></gridLayoutItem>
+
+        <gridLayoutItem row="2"  column="1" columnSpan="1"  ><label  id="dialogAddTxt.name.new.label" value="value:" textAlignment="left|vCenter" vSizePolicy="fixed" borderStyle="" fixedHeight="20" /></gridLayoutItem>
+        <gridLayoutItem row="2"  column="2" columnSpan="20" ><editBox placeHolderText="value" id="dialogAddTxt.name.new"  hSizePolicy="expanding" /></gridLayoutItem>
+
+    </gridLayout>
+     <include file="dialogAddTxt.lua" />
+</template>

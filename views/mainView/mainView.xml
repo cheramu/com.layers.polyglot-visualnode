@@ -1,0 +1,74 @@
+<moduleView id="MainView">
+    <boxLayout direction="vertical" spacing="0">
+
+        <!-- TOP TOOLBAR -->
+        <window hSizePolicy="expanding" vSizePolicy="fixed" fixedHeight="26" borderStyle="all" backgroundStyle="plain">
+            <boxLayout direction="horizontal" spacing="0">
+                <window hSizePolicy="expanding" >
+                    <boxLayout  direction="horizontal" spacing="0" marginLeft="8" >
+                        <boxLayoutItem type="stretch" />
+                        <toggleButton id="mainView.button.view.detail" state="true" drawFocus="false" icon="pd-icon.view.detail.hide"  backgroundStyle="plain" tooltip="View-mode" hSizePolicy="fixed" fixedWidth="26" vSizePolicy="fixed" fixedHeight="20" />
+                        <label text=""/>
+                    </boxLayout>
+                </window>
+            </boxLayout>
+        </window>
+
+        <!--  HEADER  -->
+        <window id="Header" borderStyle="bottom|plain" >
+        <boxLayout direction="horizontal" spacing="0">
+            <label minimumWidth="20" text=""/>
+            <label    value="Polyglot-VisualNode" textAlignment="left|vCenter" vSizePolicy="fixed" borderStyle="" fixedHeight="52" />
+            <boxLayoutItem  type="stretch"/>
+            <picture  icon="polyglot-dialogueIcon" pictureSize="64" id="preview" hSizePolicy="fixed" vSizePolicy="fixed" fixedWidth="44" fixedHeight="44" />
+            <label text=""/>
+        </boxLayout>
+        </window>
+        <window vSizePolicy="fixed" borderStyle="" fixedHeight="6" backgroundStyle="plain" brushId="Toolbar"/>
+
+        <!-- BODY -->
+        <stackContainer id="mainview.stackcontainer" >
+        <splitContainer id="mainview.splitcontainer" orientation="horizontal"  spacing="0" fixedSplit="400"  >
+            <!--  NAVIGATION BAR (LEFT) -->
+            <window id="sidebar" hSizePolicy="expanding" vSizePolicy="expanding" margins="0" >
+                <!--  TREE CONTENT  -->
+                <boxLayout direction="vertical" spacing="0">
+                <tabContainer id="MainView.TabMasterExplorer" vSizePolicy="expanding" hSizePolicy="expanding" >
+                </tabContainer>
+                </boxLayout>
+            </window>
+
+            <!-- CONTENTS (RIGHT)  -->
+            <window  id="MainView.file" vSizePolicy="expanding" backgroundStyle="plain"  borderStyle="bottom|right|plain" >
+                <boxLayout  backgroundStyle="plain"   direction="vertical"  spacing="0" >
+                    <tabContainer id="MainView.TabTop" vSizePolicy="expanding" hSizePolicy="expanding" />
+                </boxLayout>
+            </window>
+        </splitContainer>
+
+        <tabContainer id="mainview.tabcontainer.master.single" vSizePolicy="expanding" hSizePolicy="expanding" >
+        </tabContainer>
+
+        </stackContainer>
+        <!-- TOOLBAR BOTTOM -->
+        <window hSizePolicy="expanding" vSizePolicy="fixed" fixedHeight="20" borderStyle="all" backgroundStyle="plain">
+            <boxLayout direction="horizontal" spacing="0">
+                <window  backgroundStyle="plain">
+                <boxLayout     direction="horizontal"  spacing="0"  >
+                </boxLayout>
+                </window>
+            </boxLayout>
+        </window>
+    </boxLayout>
+
+    <!-- INCLUDES -->
+    <include file="mainView.lua" />
+    <include file="mainViewMenu.xml" />
+
+    <!-- CONNECTS -->
+    <connect sender="MainView"                  event="kEventModuleViewInitialized"             handler="onMainViewInit" />
+    <connect sender="MainView"                  event="kEventModuleViewDestroyed"               handler="onMainViewDestroy" />
+
+    <connect sender="mainView.button.view.detail"    event="kEventButtonClicked" handler="onEventButtonClickedViewDetail"/>
+
+</moduleView>

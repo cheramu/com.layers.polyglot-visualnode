@@ -1,0 +1,21 @@
+node["node.types"] =
+{
+["5"] =
+"actor"
+,
+["4"] =
+"dialog"
+,
+["3"] =
+"text"
+,
+["2"] =
+"resource"
+,
+["1"] =
+"node"
+,
+["6"] =
+"conversation"
+,
+}

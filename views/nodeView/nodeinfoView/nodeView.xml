@@ -1,0 +1,48 @@
+<template>
+    <window id="nodeView" backgroundColor="44,44,44" backgroundStyle="brush">
+        <boxLayout>
+            <!--  HEADER  -->
+            <window vSizePolicy="fixed" borderStyle="" fixedHeight="3" backgroundStyle="plain" brushId="Toolbar"/>
+
+            <window vSizePolicy="fixed" backgroundColor="44,44,44" borderStyle="plain|top|bottom" fixedHeight="19" backgroundStyle="plain" >
+            <boxLayout direction="horizontal" spacing="0">
+                <label id="nodeView.label.text" textAlignment="center" text=""/>
+            </boxLayout>
+            </window>
+
+            <window  borderStyle="bottom|raised" hSizePolicy="expanding" vSizePolicy="fixed" fixedHeight="26"  >
+            <boxLayout direction="horizontal" spacing="0">
+                <window>
+                    <boxLayout direction="horizontal" spacing="0">
+                        <boxLayoutItem type="spacing" size="4"/>
+                        <boxLayoutItem  type="stretch"/>
+                        <instantiate id="section.environment.fastfilter" library="com.shiva.editor.common.lib" template="FastFilter" />
+                    </boxLayout>
+                </window>
+            </boxLayout>
+            </window>
+            <!--  CONTENT  -->
+            <scrollContainer id="nodeView.content"  >
+                <window>
+                    <boxLayout id="nodeView.content.components"  direction="vertical"  >
+                        <editBox readOnly="true"  drawFocus="true" id="nodeView.content.node.id" text="id: "/>
+                        <label id="nodeView.content.node.type" text="type: "/>
+                        <label id="nodeView.content.fields.total" text="fields total: "/>
+
+                        <label id="nodeView.content.fields.missing.count" text="fields missing: " />
+                        <list  minimumHeight="27" id="nodeView.content.fields.missing"  hSizePolicy="preferred"  headers="false" vSizePolicy="minimumExpanding"  >
+                            <column position="1" headerText="fields missing"/>
+                        </list>
+
+                        <label id="nodeView.content.fields.custom.count" text="fields custom: "/>
+                        <list  minimumHeight="27" id="nodeView.content.fields.custom" hSizePolicy="preferred"  headers="false" vSizePolicy="minimumExpanding"  >
+                            <column position="1" headerText="fields custom"/>
+                        </list>
+                        <boxLayoutItem type="stretch" type="spacer" />
+                    </boxLayout>
+                </window>
+            </scrollContainer>
+        </boxLayout>
+    </window>
+    <include file="nodeView.lua"/>
+</template>

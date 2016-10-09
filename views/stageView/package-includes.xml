@@ -1,0 +1,12 @@
+<!-- should be generated -->
+<library id="stageView">
+    <!--
+    <include file="../../pd-storage/packages/com.layers.polyglot-dialogue/views/stageView/preview/AI_DIALOGUE.lua" />
+    <include file="../../pd-storage/packages/com.layers.polyglot-dialogue/views/stageView/preview/previewStageHud.lua"/>
+    <include file="../../pd-storage/packages/com.layers.polyglot-dialogue/views/stageView/preview/previewStageView.lua"/>
+
+    <include file="../../pd-storage/packages/com.layers.polyglot-dialogue/views/stageView/screenplay/screenplayStageScene.lua"/>
+    <include file="../../pd-storage/packages/com.layers.polyglot-dialogue/views/stageView/screenplay/screenplayStageHud.lua"/>
+    <include file="../../pd-storage/packages/com.layers.polyglot-dialogue/views/stageView/screenplay/screenplayStageView.lua"/>
+    -->
+</library>

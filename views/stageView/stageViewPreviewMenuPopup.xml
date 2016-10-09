@@ -1,0 +1,14 @@
+<menu id="stageViewPreview.menu.popup" type="popUp" orientation="vertical" >
+    <menuItem id="stageViewPreview.menu.reset" icon="pd-icon.node" text="Reset dialogue" />
+    <menuItem type="separator"/>
+
+    <!-- DIALOGUE CONTROL MENU -->
+    <menuItem id="stageViewPreview.menu.back"  icon="pd-icon.node" text="Back" />
+    <menuItem id="stageViewPreview.menu.forward"  icon="pd-icon.node" text="Forward" />
+
+    <menuItem type="separator"/>
+    <menuItem id="stageViewPreview.menu.info" icon="pd-icon.node"  text="Info dialog" />
+
+    <connect sender="stageViewPreview.menu.reset" event="kEventMenuActionTriggered" handler="onStageViewPreviewReset" />
+
+</menu>

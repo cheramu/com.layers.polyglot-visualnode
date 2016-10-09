@@ -1,0 +1,14 @@
+<resources>
+
+    <icon id="pause" file="EnginePause_16_normal.png" />
+    <icon id="play" file="EnginePlay_16_normal.png" />
+    <icon id="stop" file="EngineStop_16_normal.png" />
+    <icon id="loop" file="Loop_24_normal.png" />
+    <icon id="stepnext" file="EngineStepNext_16_normal.png" />
+    <icon id="stepprev" file="EngineStepPrev_16_normal.png" />
+    <icon id="playrangeleft" file="PlayRangeLeft_16_normal.png" />
+    <icon id="playrangeright" file="PlayRangeRight_16_normal.png" />
+
+</resources>
+
+

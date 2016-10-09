@@ -1,0 +1,42 @@
+<moduleViewMenu>
+
+    <menu id="outlinerViewMenu" type="anchored" hSizePolicy= "expanding" vSizePolicy= "preferred">
+
+        <!-- FILE -->
+        <menuItem id="" text="File" type="subMenu" tooltip="" >
+            <menu id="outlinerViewMenu.file" type="popUp" orientation="vertical" >
+                <menuItem id="outlinerViewMenu.file.save" text="Save" icon="Save" > <shortcut id="save" value="@Save" /> </menuItem>
+                
+                <menuItem type="separator"/>
+                <menuItem id="outlinerViewMenu.file.settings"  text="Settings..." />
+                
+                <menuItem type="separator"/>
+                <menuItem id="outlinerViewMenu.file.close" text="Close" > <shortcut id="close" value="@Close" /> </menuItem>
+            </menu>
+        </menuItem>
+
+         <!-- EDIT -->
+        <menuItem text="Edit" type="subMenu" >
+            <menu id="outlinerViewMenu.edit" type="popUp" orientation="vertical" >
+                <menuItem id="outlinerViewMenu.edit.undo"       text="Undo" >               <shortcut value="@Undo" /> </menuItem>
+                <menuItem id="outlinerViewMenu.edit.redo"       text="Redo" >               <shortcut value="@Redo" /> </menuItem>
+            </menu>
+        </menuItem>
+
+    </menu>
+
+    <include file="outlinerViewMenu.lua"/>
+
+    <!-- CONNECTS -->
+    <connect sender="outlinerViewMenu.file"          event="kEventMenuWillPopUp"       handler="onOutlinerViewUpdateMenuFile"   />
+    <connect sender="outlinerViewMenu.edit"          event="kEventMenuWillPopUp"       handler="onOutlinerViewUpdateMenuEdit"   />
+
+    <connect sender="outlinerViewMenu.file.save"     event="kEventMenuActionTriggered" handler="onOutlinerViewMenuFileSave"     />
+    <connect sender="outlinerViewMenu.file.settings" event="kEventMenuActionTriggered" handler="onOutlinerViewMenuFileSettings" />
+    <connect sender="outlinerViewMenu.file.close"    event="kEventMenuActionTriggered" handler="onOutlinerViewMenuFileClose"    />
+
+    <connect sender="outlinerViewMenu.edit.undo"     event="kEventMenuActionTriggered" handler="onOutlinerViewMenuEditUndo"     />
+    <connect sender="outlinerViewMenu.edit.redo"     event="kEventMenuActionTriggered" handler="onOutlinerViewMenuEditRedo"     />
+
+</moduleViewMenu>
+

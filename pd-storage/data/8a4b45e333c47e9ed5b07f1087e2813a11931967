@@ -1,0 +1,45 @@
+node["dialog"] =
+{
+["ACTOR_TAG"] =
+""
+,
+["BACKGROUND"] =
+""
+,
+["CONDITION"] =
+""
+,
+["DESCRIPTION"] =
+""
+,
+["FUCTION"] =
+""
+,
+["ID"] =
+""
+,
+["NEXT"] =
+""
+,
+["SOUND"] =
+""
+,
+["STATE"] =
+""
+,
+["TAG"] =
+""
+,
+["TEXT"] =
+"test"
+,
+["TEXT-ja-JP"] =
+""
+,
+["TITLE"] =
+""
+,
+["TYPE"] =
+""
+,
+}
