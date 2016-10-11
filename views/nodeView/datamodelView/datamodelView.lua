@@ -152,19 +152,24 @@ function updateTreeNodeDataModel ( sNodeName,tNode )
     local sNodeIdOld = tData["item-id-node"]
     local sRelative = tData["item-file-path"]
 
+    --log.warning ( "Old NodeId " .. sNodeName )
+    --log.warning ( sRelative )
+
     local oldNode = CLP_Node:getNode( tData["item-id-node"],  tData["item-file-path"] )
-    local isGen = CLP_Node:isGenNode(sNodeIdOld, sNodeName, oldNode)
+    local isGen = CLP_Node:isGenNode(sNodeIdOld, sNodeName, oldNode[sNodeName])
+
 
     local sNewNodeId = nil
-    if(not isGen)
+    if(isGen)
     then
-        --log.error ( "old Node" .. sNewNodeId )
-        sNewNodeId = CLP_Node:AddNode( sNodeName , tNode, sNodeId, sRelative )
-        tData["item-id-node"] = sNewNodeId
-        gui.setTreeItemData( lhCompoment, gui.kDataRoleUser, tData )
-    else
         sNewNodeId = CLP_Node:AddNode( sNodeName , tNode )
         --log.error ( "new Node" .. sNewNodeId )
+        tData["item-id-node"] = sNewNodeId
+        gui.setTreeItemData( lhCompoment, gui.kDataRoleUser, tData )
+
+    else
+        --log.error ( "old Node" .. sNewNodeId )
+        sNewNodeId = CLP_Node:AddNode( sNodeName , tNode, sNodeIdOld, sRelative )
         tData["item-id-node"] = sNewNodeId
         gui.setTreeItemData( lhCompoment, gui.kDataRoleUser, tData )
     end

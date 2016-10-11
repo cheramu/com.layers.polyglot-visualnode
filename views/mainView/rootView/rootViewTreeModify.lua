@@ -179,7 +179,7 @@ function onDialogAddResult( status, result )
     --status.yes --status.no
     if( status )
     then
-        log.message ( "onDialogAddResult" )
+        --log.message ( "onDialogAddResult" )
         local tree =  result.tree
 
         local hNewTreeItem  = gui.appendTreeItem ( tree,  result.data )
@@ -189,8 +189,15 @@ function onDialogAddResult( status, result )
             local sNodeId = CLP_Node:AddNode( result.nodeselected )
 
             local dm = getDatamodel( )
-            local tag = dm[result.nodeselected .. ".tag"]
-            local icon = dm[result.nodeselected .. ".view.treeicon"]
+            local tag = { prefix="", suffix="" }
+            if( dm[result.nodeselected .. ".tag"] ) then
+                tag = dm[result.nodeselected .. ".tag"]
+            end
+
+            local icon = {default = nil}
+            if(dm[result.nodeselected .. ".view.treeicon"]) then
+                icon = dm[result.nodeselected .. ".view.treeicon"]
+            end
 
             local tNodeDmView = dm["editor.tree.item.view"]
             tNodeDmView["item-id-self"] = ""
@@ -206,7 +213,6 @@ function onDialogAddResult( status, result )
             gui.setTreeItemData ( hNewTreeItem, gui.kDataRoleDecoration, gui.getIcon ( icon.default ) )
             gui.setTreeItemData ( hNewTreeItem, gui.kDataRoleUser,   tNodeDmView )
 
-            log.warning ( sNodeId )
             saveTreeViewNode()
         end
     else
