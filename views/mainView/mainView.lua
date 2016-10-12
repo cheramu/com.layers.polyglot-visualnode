@@ -273,7 +273,7 @@ function loadViews( )
     local hFile = project.getFile ( sPath )
 
     guiex.openFiles ( hFile, "Node Outliner", gui.getCurrentDesktop() )
-    guiex.openFiles ( hFile, "Stage", gui.getCurrentDesktop() )
+    --guiex.openFiles ( hFile, "Stage", gui.getCurrentDesktop() )
     guiex.openFiles ( hFile, "Node Properties", gui.getCurrentDesktop() )
 end
 
