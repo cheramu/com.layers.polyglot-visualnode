@@ -127,7 +127,8 @@ function CLP_Node.isGenNode( self, sNodeId, sNodename, tNodeData )
 
     sOutput = ""
     sOutput = sOutput .. 'node["' .. sNodename .. '"] =\n{\n'
-    for i, v in pairs( tNodeData ) do
+    --for i, v in pairs( tNodeData ) do
+     for i, v in pairsByKeys(tNodeData) do
         local vOut = v
         if(istable(v))
         then
@@ -150,9 +151,13 @@ function CLP_Node.isGenNode( self, sNodeId, sNodename, tNodeData )
     local nlenght =  string.getLength ( sOutput )
     local sFilename = string.sha1 ( sNodename .. ";".. nlenght .. ";" ..  sOutput )
 
+    log.message ( tNodeData )
+    log.warning ( sFilename )
+    log.warning ( sNodeId )
+
     if(sFilename == sNodeId)
     then
-        return sNodeId
+        return true
     end
 
     return nil

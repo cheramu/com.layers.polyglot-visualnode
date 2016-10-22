@@ -135,7 +135,7 @@ function onDatamodelViewDialogEditResult( status, dt )
             updateTreeNodeDataModel( kN,data)
         end
 
-        saveTreeViewNode()
+        --saveTreeViewNode()
         --updateViewsNode(sNewNodeId, result )
     end
 end
@@ -158,18 +158,17 @@ function updateTreeNodeDataModel ( sNodeName,tNode )
     local oldNode = CLP_Node:getNode( tData["item-id-node"],  tData["item-file-path"] )
     local isGen = CLP_Node:isGenNode(sNodeIdOld, sNodeName, oldNode[sNodeName])
 
-
     local sNewNodeId = nil
     if(isGen)
     then
         sNewNodeId = CLP_Node:AddNode( sNodeName , tNode )
-        --log.error ( "new Node" .. sNewNodeId )
+        log.error ( "Gen Node" .. sNewNodeId )
         tData["item-id-node"] = sNewNodeId
         gui.setTreeItemData( lhCompoment, gui.kDataRoleUser, tData )
 
     else
-        --log.error ( "old Node" .. sNewNodeId )
         sNewNodeId = CLP_Node:AddNode( sNodeName , tNode, sNodeIdOld, sRelative )
+        log.error ( "Type Node" .. sNewNodeId )
         tData["item-id-node"] = sNewNodeId
         gui.setTreeItemData( lhCompoment, gui.kDataRoleUser, tData )
     end
