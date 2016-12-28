@@ -1,0 +1,14 @@
+<magic-system>
+  <item id="m(fire)" field="level" value="" />
+  <item id="m(fire)" field="description" value="Fire magic" />
+  <item id="m(fire)" field="type" value="fire" />
+  <item id="m(fire)" field="sound" value="" />
+  <item id="m(fire)" field="power" value="" />
+  <item id="m(fire)" field="effect" value="effect-fire" />
+  <item id="m(earth)" field="level" value="" />
+  <item id="m(earth)" field="description" value="Earth magic" />
+  <item id="m(earth)" field="type" value="earth" />
+  <item id="m(earth)" field="sound" value="" />
+  <item id="m(earth)" field="power" value="" />
+  <item id="m(earth)" field="effect" value="effect-earth" />
+</magic-system/>

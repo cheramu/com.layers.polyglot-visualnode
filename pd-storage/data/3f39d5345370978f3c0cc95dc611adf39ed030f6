@@ -1,0 +1,15 @@
+node["editor.resource.file.traverse"] =
+{
+["location"] =
+"tw.dynamic"
+,
+["name"] =
+"export_font3d.lua"
+,
+["path"] =
+"logic/export/"
+,
+["type"] =
+"tw.none"
+,
+}

@@ -1,0 +1,21 @@
+node["system.magic.ability"] =
+{
+["effect"] =
+""
+,
+["level"] =
+""
+,
+["particle"] =
+""
+,
+["power"] =
+""
+,
+["range"] =
+""
+,
+["type"] =
+"fire"
+,
+}

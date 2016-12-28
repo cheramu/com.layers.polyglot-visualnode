@@ -9,4 +9,7 @@ node["node.types"] =
 ["3"] =
 "text"
 ,
+["4"] =
+"magic.ability"
+,
 }

@@ -1,0 +1,15 @@
+node["editor.resource.file.traverse"] =
+{
+["location"] =
+"tw.dynamic"
+,
+["name"] =
+"export_system_magic.lua"
+,
+["path"] =
+"logic/export/"
+,
+["type"] =
+"tw"
+,
+}

@@ -1,0 +1,21 @@
+node["magic.ability"] =
+{
+["description"] =
+"Fire magic"
+,
+["effect"] =
+"effect-fire"
+,
+["level"] =
+""
+,
+["power"] =
+""
+,
+["sound"] =
+""
+,
+["type"] =
+"earth"
+,
+}
